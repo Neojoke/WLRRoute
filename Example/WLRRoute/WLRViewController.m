@@ -26,7 +26,6 @@
         NSLog(@"UserCallBack");
     } withCompletionBlock:^(BOOL handled, NSError *error) {
         NSLog(@"UserHandleCompletion");
-
     }];
 }
 - (IBAction)SiginClick:(UIButton *)sender {
@@ -34,7 +33,6 @@
         NSLog(@"SiginCallBack");
     } withCompletionBlock:^(BOOL handled, NSError *error) {
         NSLog(@"SiginHandleCompletion");
-        
     }];
 }
 
