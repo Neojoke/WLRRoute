@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WLRRoute_Example' do
+  pod 'WLRRoute', :path => '../'
+
+  target 'WLRRoute_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
