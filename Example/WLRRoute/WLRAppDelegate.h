@@ -7,9 +7,9 @@
 //
 
 @import UIKit;
-
+@class WLRRouter;
 @interface WLRAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property(nonatomic,strong)WLRRouter * router;
 @end

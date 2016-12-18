@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B17C2FB283B5E0EDF457674 /* libPods-WLRRoute_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 345940877F636B03192F1CA8 /* libPods-WLRRoute_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,9 +21,12 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		71E5C937227B410332C10DF9 /* libPods-WLRRoute_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F6F3137D472ABCEDDC83CDD /* libPods-WLRRoute_Tests.a */; };
+		76B4BC821E06A18400D1E590 /* WLRSignHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4BC811E06A18400D1E590 /* WLRSignHandler.m */; };
+		76B4BC851E06A18E00D1E590 /* WLRUserHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4BC841E06A18E00D1E590 /* WLRUserHandler.m */; };
+		76B4BC881E06A1A100D1E590 /* WLRSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4BC871E06A1A100D1E590 /* WLRSignViewController.m */; };
+		76B4BC8B1E06A1AA00D1E590 /* WLRUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4BC8A1E06A1AA00D1E590 /* WLRUserViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		A3C0A88CB732D5EC963B0E26 /* Pods_WLRRoute_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B056E47FF1A1CF25540641A0 /* Pods_WLRRoute_Example.framework */; };
-		BAD73EAE5F2DFEF304775E9E /* Pods_WLRRoute_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE5095E2C4FF361F2E29A43 /* Pods_WLRRoute_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		345940877F636B03192F1CA8 /* libPods-WLRRoute_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLRRoute_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B886F0E311760DF80A2263 /* Pods-WLRRoute_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLRRoute_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLRRoute_Example/Pods-WLRRoute_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5F6F3137D472ABCEDDC83CDD /* libPods-WLRRoute_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLRRoute_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* WLRRoute_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLRRoute_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,14 +63,20 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		6332ECC62B1D02852DBA1093 /* Pods-WLRRoute_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLRRoute_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLRRoute_Example/Pods-WLRRoute_Example.release.xcconfig"; sourceTree = "<group>"; };
+		76B4BC801E06A18400D1E590 /* WLRSignHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRSignHandler.h; sourceTree = "<group>"; };
+		76B4BC811E06A18400D1E590 /* WLRSignHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRSignHandler.m; sourceTree = "<group>"; };
+		76B4BC831E06A18E00D1E590 /* WLRUserHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRUserHandler.h; sourceTree = "<group>"; };
+		76B4BC841E06A18E00D1E590 /* WLRUserHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRUserHandler.m; sourceTree = "<group>"; };
+		76B4BC861E06A1A100D1E590 /* WLRSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRSignViewController.h; sourceTree = "<group>"; };
+		76B4BC871E06A1A100D1E590 /* WLRSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRSignViewController.m; sourceTree = "<group>"; };
+		76B4BC891E06A1AA00D1E590 /* WLRUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLRUserViewController.h; sourceTree = "<group>"; };
+		76B4BC8A1E06A1AA00D1E590 /* WLRUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLRUserViewController.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A51FE03D28BD66089799BAAB /* Pods-WLRRoute_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLRRoute_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLRRoute_Tests/Pods-WLRRoute_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A70B44062FFC608A80874DF9 /* WLRRoute.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WLRRoute.podspec; path = ../WLRRoute.podspec; sourceTree = "<group>"; };
-		B056E47FF1A1CF25540641A0 /* Pods_WLRRoute_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLRRoute_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70B44062FFC608A80874DF9 /* WLRRoute.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLRRoute.podspec; path = ../WLRRoute.podspec; sourceTree = "<group>"; };
 		B302507AE219196694EE98E8 /* Pods-WLRRoute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLRRoute_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLRRoute_Tests/Pods-WLRRoute_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C510FB8F4568A3C6FF99CC18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CAE5095E2C4FF361F2E29A43 /* Pods_WLRRoute_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLRRoute_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F95F48B9A76F6072E199C0FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C510FB8F4568A3C6FF99CC18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F95F48B9A76F6072E199C0FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +87,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				A3C0A88CB732D5EC963B0E26 /* Pods_WLRRoute_Example.framework in Frameworks */,
+				4B17C2FB283B5E0EDF457674 /* libPods-WLRRoute_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +98,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				BAD73EAE5F2DFEF304775E9E /* Pods_WLRRoute_Tests.framework in Frameworks */,
+				71E5C937227B410332C10DF9 /* libPods-WLRRoute_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +133,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				B056E47FF1A1CF25540641A0 /* Pods_WLRRoute_Example.framework */,
-				CAE5095E2C4FF361F2E29A43 /* Pods_WLRRoute_Tests.framework */,
+				345940877F636B03192F1CA8 /* libPods-WLRRoute_Example.a */,
+				5F6F3137D472ABCEDDC83CDD /* libPods-WLRRoute_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,9 +144,17 @@
 			children = (
 				6003F59C195388D20070C39A /* WLRAppDelegate.h */,
 				6003F59D195388D20070C39A /* WLRAppDelegate.m */,
+				76B4BC801E06A18400D1E590 /* WLRSignHandler.h */,
+				76B4BC811E06A18400D1E590 /* WLRSignHandler.m */,
+				76B4BC831E06A18E00D1E590 /* WLRUserHandler.h */,
+				76B4BC841E06A18E00D1E590 /* WLRUserHandler.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WLRViewController.h */,
 				6003F5A6195388D20070C39A /* WLRViewController.m */,
+				76B4BC861E06A1A100D1E590 /* WLRSignViewController.h */,
+				76B4BC871E06A1A100D1E590 /* WLRSignViewController.m */,
+				76B4BC891E06A1AA00D1E590 /* WLRUserViewController.h */,
+				76B4BC8A1E06A1AA00D1E590 /* WLRUserViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -392,7 +412,11 @@
 			files = (
 				6003F59E195388D20070C39A /* WLRAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WLRViewController.m in Sources */,
+				76B4BC851E06A18E00D1E590 /* WLRUserHandler.m in Sources */,
+				76B4BC8B1E06A1AA00D1E590 /* WLRUserViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				76B4BC821E06A18400D1E590 /* WLRSignHandler.m in Sources */,
+				76B4BC881E06A1A100D1E590 /* WLRSignViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +540,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WLRRoute/WLRRoute-Prefix.pch";
 				INFOPLIST_FILE = "WLRRoute/WLRRoute-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +557,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WLRRoute/WLRRoute-Prefix.pch";
 				INFOPLIST_FILE = "WLRRoute/WLRRoute-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

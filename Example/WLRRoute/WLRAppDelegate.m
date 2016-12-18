@@ -7,12 +7,21 @@
 //
 
 #import "WLRAppDelegate.h"
+#import <WLRRoute/WLRRoute.h>
+#import "WLRSignHandler.h"
+#import "WLRUserHandler.h"
 
+@interface WLRAppDelegate()
+@end
 @implementation WLRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.router = [[WLRRouter alloc]init];
+    [self.router registerHandler:[[WLRSignHandler alloc]init] forRoute:@"/signin/:phone([0-9]+)"];
+    [self.router registerHandler:[[WLRUserHandler alloc]init] forRoute:@"/user"];
+
     return YES;
 }
 

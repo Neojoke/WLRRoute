@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03DE5305720C15E76F0C424EF0784A54 /* NSString+WLRQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = C635FDA0CC681EA11AC09EB532F9D56D /* NSString+WLRQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0849813F42CE07585C3ED32FF9B787D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1532B3A1915A7DA3BA00422D1F391F86 /* WLRRouteMiddlewareProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EEE4C38769B4062C740E91286895485 /* WLRRouteMiddlewareProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B5D6341F6F9505A546B1B2921A2E19E /* WLRRouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E2AFD2FF6DEC8F2352200430D12B6AED /* WLRRouteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35CC9E12B26F8137052C8FA2A840FB79 /* WLRMatchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 507252C54DBF189BEFCB0DF8E5D47F05 /* WLRMatchResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48CAD64D46B45B6E108D8F16B27FEF58 /* WLRRouteHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BED51AEAE05B9F740DD92D4FDDF62A1 /* WLRRouteHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56FE2D94A0FFA1FE9031E273DFC4F55A /* UIViewController+WLRRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D64DFF012A75BA74B33B902BA1622A /* UIViewController+WLRRoute.m */; };
+		57383F965BC1A74BCBDE642429675AB8 /* WLRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 498D4EA7D952EF0A51EDF9A00073DB3E /* WLRRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3B4CBBE7FE05514B0B86671637BDE4 /* WLRRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CFF7FFCA7EF687CEAB91A94D8A79925 /* WLRRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7271EFD58ED7EE4E33C25FB5DE39B60C /* WLRRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = BA9DD33B0AC446DA1FDFB62F8D7A8DEA /* WLRRegularExpression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		741443C201DA01FC93F9758369F3734E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7B20A9903CD9DE4210E0CB357E01076A /* Pods-WLRRoute_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DECA352A9E7BEE28C2321D231645C0 /* Pods-WLRRoute_Tests-dummy.m */; };
+		812CFC139A64143144F0EBC9C4B2E2C1 /* NSError+WLRError.h in Headers */ = {isa = PBXBuildFile; fileRef = 99EF2CC7EB9A42E7E1185ABA78516721 /* NSError+WLRError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81EDD19F9DCC2A28970F4841387B30A3 /* WLRRoute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDB3BACAE43F6BAEFAC6835DA3F6622E /* WLRRoute-dummy.m */; };
+		A8253853B576430A869F0BFD88635B56 /* WLRRouteMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 9927903CB9793899CB29B4CF5B255722 /* WLRRouteMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A95D4EF9C01359509D131FA1C8C63A6D /* WLRRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D1F7FFEACC3849B274AC7CC55DC0D0 /* WLRRegularExpression.m */; };
+		AE81C615CEF66044C46DB21076DB4319 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C1B76F152E31C6AA80E20B20B20EF0FD /* WLRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8772E5F3E3320FFBB438EBDFB39A84B2 /* WLRRouter.m */; };
+		C5EFAD0DC92072A9033C91A03A171D73 /* WLRMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 358D16C2FCBB00D86A6344473B175889 /* WLRMatchResult.m */; };
+		D106A3845855CC088C500DE9F29A9E4A /* UIViewController+WLRRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC52E22A9D543DEA025DC2C4100B201 /* UIViewController+WLRRoute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5D7DD0D6B7C43C145E92A8D6EA3B7DF /* WLRRouteMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 09860D1768E0ADB517A9B6B2A399D969 /* WLRRouteMatcher.m */; };
+		DC5EB9256D76D44006770BE3271D6443 /* WLRRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EF3E7C967ED88D3EF8475626FE2700 /* WLRRouteRequest.m */; };
+		E00663D5259230DFDD0F27EC4AAD4A38 /* WLRRouteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E5744F0B00577F5BF22C5B9DE0BB13F8 /* WLRRouteHandler.m */; };
+		E9E4CC7AFFAECDC8853AF4D2C057A2DC /* Pods-WLRRoute_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF980608BA431C351E71A9648E4220D /* Pods-WLRRoute_Example-dummy.m */; };
+		F53B8499B7174834DF9ECE4B957A1036 /* NSString+WLRQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CBA575ECCB896BBD48FA6603DBB7F9 /* NSString+WLRQuery.m */; };
+		F7FD655951F8E789BD1F12F8930CC8D7 /* NSError+WLRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 73046FAB154012CF1AEDA2E8806C893E /* NSError+WLRError.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2ECD47A11343D087B4DEAB818081926C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC2C61D5C8EEA6BF66E4A28BE73B205D;
+			remoteInfo = WLRRoute;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		097B60B98F8AC53DAACDC961C6E1E95C /* Pods-WLRRoute_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLRRoute_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		09860D1768E0ADB517A9B6B2A399D969 /* WLRRouteMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRRouteMatcher.m; sourceTree = "<group>"; };
+		1C1EFA93AE723C443C885F7F4876C76C /* Pods-WLRRoute_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Example-frameworks.sh"; sourceTree = "<group>"; };
+		20C91196B5B5958B4A0BD93D3520586B /* Pods-WLRRoute_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		358D16C2FCBB00D86A6344473B175889 /* WLRMatchResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRMatchResult.m; sourceTree = "<group>"; };
+		36D64DFF012A75BA74B33B902BA1622A /* UIViewController+WLRRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+WLRRoute.m"; sourceTree = "<group>"; };
+		39CBA575ECCB896BBD48FA6603DBB7F9 /* NSString+WLRQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+WLRQuery.m"; sourceTree = "<group>"; };
+		3BED51AEAE05B9F740DD92D4FDDF62A1 /* WLRRouteHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRouteHandler.h; sourceTree = "<group>"; };
+		3CFF7FFCA7EF687CEAB91A94D8A79925 /* WLRRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRoute.h; sourceTree = "<group>"; };
+		498D4EA7D952EF0A51EDF9A00073DB3E /* WLRRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRouter.h; sourceTree = "<group>"; };
+		4BE9D05A02D4FBC87A2B1C048BACBC9F /* Pods-WLRRoute_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		507252C54DBF189BEFCB0DF8E5D47F05 /* WLRMatchResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRMatchResult.h; sourceTree = "<group>"; };
+		548D947BD412C5F15B6D58F793A03960 /* WLRRoute.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLRRoute.xcconfig; sourceTree = "<group>"; };
+		6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Tests.a"; path = "libPods-WLRRoute_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DA258EA9A1AD4BE383B299EC71E24F3 /* Pods-WLRRoute_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6EEE4C38769B4062C740E91286895485 /* WLRRouteMiddlewareProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRouteMiddlewareProtocol.h; sourceTree = "<group>"; };
+		7227F03F4B410CFCEF70A619FC58D2CD /* Pods-WLRRoute_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLRRoute_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		73046FAB154012CF1AEDA2E8806C893E /* NSError+WLRError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSError+WLRError.m"; sourceTree = "<group>"; };
+		77D1F7FFEACC3849B274AC7CC55DC0D0 /* WLRRegularExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRRegularExpression.m; sourceTree = "<group>"; };
+		83DA7E73122934C700D036349C96F21B /* Pods-WLRRoute_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLRRoute_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8492AA40CE0D0379F4F39EEA4C2E4724 /* Pods-WLRRoute_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Tests-resources.sh"; sourceTree = "<group>"; };
+		8772E5F3E3320FFBB438EBDFB39A84B2 /* WLRRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRRouter.m; sourceTree = "<group>"; };
+		916AA93E3ABEAD2988ACCEE64DE16381 /* Pods-WLRRoute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		927E18A98819A062C183E3DF162A8944 /* Pods-WLRRoute_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLRRoute_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9927903CB9793899CB29B4CF5B255722 /* WLRRouteMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRouteMatcher.h; sourceTree = "<group>"; };
+		99EF2CC7EB9A42E7E1185ABA78516721 /* NSError+WLRError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+WLRError.h"; sourceTree = "<group>"; };
+		A1EF3E7C967ED88D3EF8475626FE2700 /* WLRRouteRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRRouteRequest.m; sourceTree = "<group>"; };
+		A33A5FA263A54B59BE86FE093BB367F6 /* Pods-WLRRoute_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Example.a"; path = "libPods-WLRRoute_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA9DD33B0AC446DA1FDFB62F8D7A8DEA /* WLRRegularExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRegularExpression.h; sourceTree = "<group>"; };
+		C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWLRRoute.a; path = libWLRRoute.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C635FDA0CC681EA11AC09EB532F9D56D /* NSString+WLRQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+WLRQuery.h"; sourceTree = "<group>"; };
+		C6DECA352A9E7BEE28C2321D231645C0 /* Pods-WLRRoute_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLRRoute_Tests-dummy.m"; sourceTree = "<group>"; };
+		CB5BD37AAE6A3B8463441703F6979031 /* Pods-WLRRoute_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Example-resources.sh"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CDB3BACAE43F6BAEFAC6835DA3F6622E /* WLRRoute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WLRRoute-dummy.m"; sourceTree = "<group>"; };
+		DA4D4096FBCBE6A30358ADC8ED7729AC /* WLRRoute-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLRRoute-prefix.pch"; sourceTree = "<group>"; };
+		E2AFD2FF6DEC8F2352200430D12B6AED /* WLRRouteRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRouteRequest.h; sourceTree = "<group>"; };
+		E5744F0B00577F5BF22C5B9DE0BB13F8 /* WLRRouteHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRRouteHandler.m; sourceTree = "<group>"; };
+		ECF980608BA431C351E71A9648E4220D /* Pods-WLRRoute_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLRRoute_Example-dummy.m"; sourceTree = "<group>"; };
+		FBC52E22A9D543DEA025DC2C4100B201 /* UIViewController+WLRRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WLRRoute.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06D00D05F1017845AECF96BE867563C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE81C615CEF66044C46DB21076DB4319 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19D71351293AE6066F31A53A4E0D8B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741443C201DA01FC93F9758369F3734E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB03C66B22ACA0D6AEF8B77A1520EF00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0849813F42CE07585C3ED32FF9B787D3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38B4126898C7D6B03496E1EEBFCF9E51 /* Pods-WLRRoute_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				927E18A98819A062C183E3DF162A8944 /* Pods-WLRRoute_Tests-acknowledgements.markdown */,
+				7227F03F4B410CFCEF70A619FC58D2CD /* Pods-WLRRoute_Tests-acknowledgements.plist */,
+				C6DECA352A9E7BEE28C2321D231645C0 /* Pods-WLRRoute_Tests-dummy.m */,
+				20C91196B5B5958B4A0BD93D3520586B /* Pods-WLRRoute_Tests-frameworks.sh */,
+				8492AA40CE0D0379F4F39EEA4C2E4724 /* Pods-WLRRoute_Tests-resources.sh */,
+				4BE9D05A02D4FBC87A2B1C048BACBC9F /* Pods-WLRRoute_Tests.debug.xcconfig */,
+				916AA93E3ABEAD2988ACCEE64DE16381 /* Pods-WLRRoute_Tests.release.xcconfig */,
+			);
+			name = "Pods-WLRRoute_Tests";
+			path = "Target Support Files/Pods-WLRRoute_Tests";
+			sourceTree = "<group>";
+		};
+		550CCC396F1FE6B4BE7171DA4C654B4C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				548D947BD412C5F15B6D58F793A03960 /* WLRRoute.xcconfig */,
+				CDB3BACAE43F6BAEFAC6835DA3F6622E /* WLRRoute-dummy.m */,
+				DA4D4096FBCBE6A30358ADC8ED7729AC /* WLRRoute-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WLRRoute";
+			sourceTree = "<group>";
+		};
+		706DD8E15EB333C69EA75E394B44BD47 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				99EF2CC7EB9A42E7E1185ABA78516721 /* NSError+WLRError.h */,
+				73046FAB154012CF1AEDA2E8806C893E /* NSError+WLRError.m */,
+				C635FDA0CC681EA11AC09EB532F9D56D /* NSString+WLRQuery.h */,
+				39CBA575ECCB896BBD48FA6603DBB7F9 /* NSString+WLRQuery.m */,
+				FBC52E22A9D543DEA025DC2C4100B201 /* UIViewController+WLRRoute.h */,
+				36D64DFF012A75BA74B33B902BA1622A /* UIViewController+WLRRoute.m */,
+				507252C54DBF189BEFCB0DF8E5D47F05 /* WLRMatchResult.h */,
+				358D16C2FCBB00D86A6344473B175889 /* WLRMatchResult.m */,
+				BA9DD33B0AC446DA1FDFB62F8D7A8DEA /* WLRRegularExpression.h */,
+				77D1F7FFEACC3849B274AC7CC55DC0D0 /* WLRRegularExpression.m */,
+				3CFF7FFCA7EF687CEAB91A94D8A79925 /* WLRRoute.h */,
+				3BED51AEAE05B9F740DD92D4FDDF62A1 /* WLRRouteHandler.h */,
+				E5744F0B00577F5BF22C5B9DE0BB13F8 /* WLRRouteHandler.m */,
+				9927903CB9793899CB29B4CF5B255722 /* WLRRouteMatcher.h */,
+				09860D1768E0ADB517A9B6B2A399D969 /* WLRRouteMatcher.m */,
+				6EEE4C38769B4062C740E91286895485 /* WLRRouteMiddlewareProtocol.h */,
+				498D4EA7D952EF0A51EDF9A00073DB3E /* WLRRouter.h */,
+				8772E5F3E3320FFBB438EBDFB39A84B2 /* WLRRouter.m */,
+				E2AFD2FF6DEC8F2352200430D12B6AED /* WLRRouteRequest.h */,
+				A1EF3E7C967ED88D3EF8475626FE2700 /* WLRRouteRequest.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				FB89B57615A7A48155C51BB12B20228B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				B87940CAECC7991B5564E3594617B573 /* Products */,
+				7F4B2A4DE8BF5175BAC932319EA2F9B0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F4B2A4DE8BF5175BAC932319EA2F9B0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFEA41B4B820F72982310E34DC15913A /* Pods-WLRRoute_Example */,
+				38B4126898C7D6B03496E1EEBFCF9E51 /* Pods-WLRRoute_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AFEA41B4B820F72982310E34DC15913A /* Pods-WLRRoute_Example */ = {
+			isa = PBXGroup;
+			children = (
+				83DA7E73122934C700D036349C96F21B /* Pods-WLRRoute_Example-acknowledgements.markdown */,
+				097B60B98F8AC53DAACDC961C6E1E95C /* Pods-WLRRoute_Example-acknowledgements.plist */,
+				ECF980608BA431C351E71A9648E4220D /* Pods-WLRRoute_Example-dummy.m */,
+				1C1EFA93AE723C443C885F7F4876C76C /* Pods-WLRRoute_Example-frameworks.sh */,
+				CB5BD37AAE6A3B8463441703F6979031 /* Pods-WLRRoute_Example-resources.sh */,
+				6DA258EA9A1AD4BE383B299EC71E24F3 /* Pods-WLRRoute_Example.debug.xcconfig */,
+				A33A5FA263A54B59BE86FE093BB367F6 /* Pods-WLRRoute_Example.release.xcconfig */,
+			);
+			name = "Pods-WLRRoute_Example";
+			path = "Target Support Files/Pods-WLRRoute_Example";
+			sourceTree = "<group>";
+		};
+		B87940CAECC7991B5564E3594617B573 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */,
+				6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */,
+				C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8035CC4D9C614A2523912EFC32EE3EA /* WLRRoute */ = {
+			isa = PBXGroup;
+			children = (
+				550CCC396F1FE6B4BE7171DA4C654B4C /* Support Files */,
+				E8ABAB27E720064C346209099E79A816 /* WLRRoute */,
+			);
+			name = WLRRoute;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		E8ABAB27E720064C346209099E79A816 /* WLRRoute */ = {
+			isa = PBXGroup;
+			children = (
+				706DD8E15EB333C69EA75E394B44BD47 /* Classes */,
+			);
+			name = WLRRoute;
+			path = WLRRoute;
+			sourceTree = "<group>";
+		};
+		FB89B57615A7A48155C51BB12B20228B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8035CC4D9C614A2523912EFC32EE3EA /* WLRRoute */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B3A5AC12533BC20BDBDDA1197FD9BA7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				812CFC139A64143144F0EBC9C4B2E2C1 /* NSError+WLRError.h in Headers */,
+				03DE5305720C15E76F0C424EF0784A54 /* NSString+WLRQuery.h in Headers */,
+				D106A3845855CC088C500DE9F29A9E4A /* UIViewController+WLRRoute.h in Headers */,
+				35CC9E12B26F8137052C8FA2A840FB79 /* WLRMatchResult.h in Headers */,
+				7271EFD58ED7EE4E33C25FB5DE39B60C /* WLRRegularExpression.h in Headers */,
+				6E3B4CBBE7FE05514B0B86671637BDE4 /* WLRRoute.h in Headers */,
+				48CAD64D46B45B6E108D8F16B27FEF58 /* WLRRouteHandler.h in Headers */,
+				A8253853B576430A869F0BFD88635B56 /* WLRRouteMatcher.h in Headers */,
+				1532B3A1915A7DA3BA00422D1F391F86 /* WLRRouteMiddlewareProtocol.h in Headers */,
+				57383F965BC1A74BCBDE642429675AB8 /* WLRRouter.h in Headers */,
+				1B5D6341F6F9505A546B1B2921A2E19E /* WLRRouteRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D613574A90612EDB6F66CEC93156363 /* Pods-WLRRoute_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4FE4AB2D9219AF25D25AD6AC66404B9 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Example" */;
+			buildPhases = (
+				FF43F545FA83A35111104A37CBC5E1F2 /* Sources */,
+				FB03C66B22ACA0D6AEF8B77A1520EF00 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1933C732B35B863196CD13AC96783ACF /* PBXTargetDependency */,
+			);
+			name = "Pods-WLRRoute_Example";
+			productName = "Pods-WLRRoute_Example";
+			productReference = AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EC2C61D5C8EEA6BF66E4A28BE73B205D /* WLRRoute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED42201726D5A23E45F2144C243F00E0 /* Build configuration list for PBXNativeTarget "WLRRoute" */;
+			buildPhases = (
+				0BCF48C69221DBFD5DB47F0078D9E578 /* Sources */,
+				06D00D05F1017845AECF96BE867563C0 /* Frameworks */,
+				3B3A5AC12533BC20BDBDDA1197FD9BA7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLRRoute;
+			productName = WLRRoute;
+			productReference = C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FF89019B7AC7C84149C65EC1FB178098 /* Pods-WLRRoute_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE12A91E8B5D5797CE2BE33612A996D4 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Tests" */;
+			buildPhases = (
+				FAED59C67597A0C7B3A120B83E19438F /* Sources */,
+				D19D71351293AE6066F31A53A4E0D8B8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WLRRoute_Tests";
+			productName = "Pods-WLRRoute_Tests";
+			productReference = 6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B87940CAECC7991B5564E3594617B573 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D613574A90612EDB6F66CEC93156363 /* Pods-WLRRoute_Example */,
+				FF89019B7AC7C84149C65EC1FB178098 /* Pods-WLRRoute_Tests */,
+				EC2C61D5C8EEA6BF66E4A28BE73B205D /* WLRRoute */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BCF48C69221DBFD5DB47F0078D9E578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FD655951F8E789BD1F12F8930CC8D7 /* NSError+WLRError.m in Sources */,
+				F53B8499B7174834DF9ECE4B957A1036 /* NSString+WLRQuery.m in Sources */,
+				56FE2D94A0FFA1FE9031E273DFC4F55A /* UIViewController+WLRRoute.m in Sources */,
+				C5EFAD0DC92072A9033C91A03A171D73 /* WLRMatchResult.m in Sources */,
+				A95D4EF9C01359509D131FA1C8C63A6D /* WLRRegularExpression.m in Sources */,
+				81EDD19F9DCC2A28970F4841387B30A3 /* WLRRoute-dummy.m in Sources */,
+				E00663D5259230DFDD0F27EC4AAD4A38 /* WLRRouteHandler.m in Sources */,
+				D5D7DD0D6B7C43C145E92A8D6EA3B7DF /* WLRRouteMatcher.m in Sources */,
+				C1B76F152E31C6AA80E20B20B20EF0FD /* WLRRouter.m in Sources */,
+				DC5EB9256D76D44006770BE3271D6443 /* WLRRouteRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAED59C67597A0C7B3A120B83E19438F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B20A9903CD9DE4210E0CB357E01076A /* Pods-WLRRoute_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF43F545FA83A35111104A37CBC5E1F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E4CC7AFFAECDC8853AF4D2C057A2DC /* Pods-WLRRoute_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1933C732B35B863196CD13AC96783ACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WLRRoute;
+			target = EC2C61D5C8EEA6BF66E4A28BE73B205D /* WLRRoute */;
+			targetProxy = 2ECD47A11343D087B4DEAB818081926C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AD5D85724166E6897B1DBD42FA7A85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548D947BD412C5F15B6D58F793A03960 /* WLRRoute.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WLRRoute/WLRRoute-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		18452C0CBD2ED3BE466748DF4AA46DC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE9D05A02D4FBC87A2B1C048BACBC9F /* Pods-WLRRoute_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		21A37BAB10A46BE51D8280DFBDD847D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 548D947BD412C5F15B6D58F793A03960 /* WLRRoute.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/WLRRoute/WLRRoute-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6D8C09466B6C24E8A865476520F4A524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33A5FA263A54B59BE86FE093BB367F6 /* Pods-WLRRoute_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A15EBF6BB920572FD2A5014106014B57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA258EA9A1AD4BE383B299EC71E24F3 /* Pods-WLRRoute_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EDBA39C0713D6458ECA8364857F48EE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916AA93E3ABEAD2988ACCEE64DE16381 /* Pods-WLRRoute_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
+				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4FE4AB2D9219AF25D25AD6AC66404B9 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A15EBF6BB920572FD2A5014106014B57 /* Debug */,
+				6D8C09466B6C24E8A865476520F4A524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE12A91E8B5D5797CE2BE33612A996D4 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18452C0CBD2ED3BE466748DF4AA46DC9 /* Debug */,
+				EDBA39C0713D6458ECA8364857F48EE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED42201726D5A23E45F2144C243F00E0 /* Build configuration list for PBXNativeTarget "WLRRoute" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AD5D85724166E6897B1DBD42FA7A85F /* Debug */,
+				21A37BAB10A46BE51D8280DFBDD847D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

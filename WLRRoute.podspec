@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WLRRoute'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of WLRRoute.'
+  s.version          = '0.0.1'
+  s.summary          = 'WLRRoute is a simple route,it can provide Url matching and custom handler~'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/WLRRoute'
+  s.homepage         = 'https://github.com/Neojoke/WLRRoute'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Neo' => '394570610@qq.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/WLRRoute.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Neojoke/WLRRoute.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'WLRRoute/Classes/**/*'
   
