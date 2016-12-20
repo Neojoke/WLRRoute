@@ -13,4 +13,5 @@
 -(UIViewController *)targetViewControllerWithRequest:(WLRRouteRequest *)request;
 -(UIViewController *)sourceViewControllerForTransitionWithRequest:(WLRRouteRequest *)request;
 -(BOOL)transitionWithRequest:(WLRRouteRequest *)request error:(NSError *__autoreleasing *)error;
+- (BOOL)preferModalPresentationWithRequest:(WLRRouteRequest *)request;
 @end

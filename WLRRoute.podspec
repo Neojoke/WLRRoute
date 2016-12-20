@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WLRRoute'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'WLRRoute is a simple route,it can provide Url matching and custom handler~'
 
 # This description is used to generate tags and improve search results.
