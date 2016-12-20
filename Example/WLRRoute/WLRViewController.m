@@ -9,7 +9,7 @@
 #import "WLRViewController.h"
 #import <WLRRoute/WLRRoute.h>
 #import "WLRAppDelegate.h"
-@interface WLRViewController ()
+@interface WLRViewController ()<WLRRouteMiddleware>
 @property(nonatomic,weak)WLRRouter * router;
 @end
 
@@ -19,7 +19,17 @@
 {
     [super viewDidLoad];
     self.router = ((WLRAppDelegate *)[UIApplication sharedApplication].delegate).router;
+    [self.router addMiddleware:self];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+-(NSDictionary *)middlewareHandleRequestWith:(WLRRouteRequest *__autoreleasing *)primitiveRequest error:(NSError *__autoreleasing *)error{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.router removeMiddleware:self];
+    });
+    return nil;
+    //test:
+//    *error = [NSError WLRMiddlewareRaiseErrorWithMsg:[NSString stringWithFormat:@"%@ raise error",NSStringFromClass([self class])]];
+//    return @{@"result":@"yes"};
 }
 - (IBAction)userClick:(UIButton *)sender {
     [self.router handleURL:[NSURL URLWithString:@"WLRDemo://com.wlrroute.demo/user"] primitiveParameters:@{@"user":@"Neo~🙃🙃"} targetCallBack:^(NSError *error, id responseObject) {

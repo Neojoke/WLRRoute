@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WLRRoute'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'WLRRoute is a simple route,it can provide Url matching and custom handler~'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+It is used to show how to build a route system in iOS app, and I keep it simple and clear.WLRRoute provide url matching , primitive parameters transfer, target callback block , custom handler can overwrite  transitionWithRequest to navigate source to target.
                        DESC
 
   s.homepage         = 'https://github.com/Neojoke/WLRRoute'

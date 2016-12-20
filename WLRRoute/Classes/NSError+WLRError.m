@@ -7,15 +7,26 @@
 //
 
 #import "NSError+WLRError.h"
-NSString * const WLRErrorDomain = @"com.usebutton.deeplink.error";
+NSString * const WLRErrorDomain = @"com.wlrroute.error";
 
 @implementation NSError (WLRError)
 +(NSError *)WLRNotFoundError{
-    NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: NSLocalizedString(@"The passed URL does not match a registered route.", nil) };
-    return [NSError errorWithDomain:WLRErrorDomain code:WLRRouteNotFoundError userInfo:userInfo];
+    return [self WLRErrorWithCode:WLRRouteNotFoundError msg:@"The passed URL does not match a registered route."];
 }
 +(NSError *)WLRTransitionError{
-    NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: NSLocalizedString(@"TargetViewController or SourceViewController not correct", nil) };
-    return [NSError errorWithDomain:WLRErrorDomain code:WLRRouteHandlerTargetOrSourceViewControllerNotSpecifiedError userInfo:userInfo];
+
+    return [self WLRErrorWithCode:WLRRouteHandlerTargetOrSourceViewControllerNotSpecifiedError msg:@"TargetViewController or SourceViewController not correct"];
+}
++(NSError *)WLRHandleBlockNoTeturnRequest
+{
+    return [self WLRErrorWithCode:WLRRouteBlockHandleNoReturnRequestError msg:@"Block handle no turn WLRRouteRequest object"];
+}
+
++(NSError *)WLRMiddlewareRaiseErrorWithMsg:(NSString *)error{
+    return [self WLRErrorWithCode:WLRRouteMiddlewareRaiseError msg:[NSString stringWithFormat:@"WLRRouteMiddle raise a error:%@",error]];
+}
++(NSError *)WLRErrorWithCode:(NSInteger)code msg:(NSString *)msg{
+    NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: NSLocalizedString(msg, nil) };
+    return [NSError errorWithDomain:WLRErrorDomain code:code userInfo:userInfo];
 }
 @end

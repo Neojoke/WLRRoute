@@ -16,8 +16,25 @@
 @property(nonatomic,strong)NSMutableDictionary * routeMatchers;
 @property(nonatomic,strong)NSMutableDictionary * routeHandles;
 @property(nonatomic,strong)NSMutableDictionary * routeblocks;
+@property(nonatomic,strong)NSHashTable * middlewares;
 @end
 @implementation WLRRouter
+-(NSHashTable *)middlewares{
+    if (!_middlewares) {
+        _middlewares = [NSHashTable hashTableWithOptions:NSPointerFunctionsWeakMemory];
+    }
+    return _middlewares;
+}
+-(void)addMiddleware:(id<WLRRouteMiddleware>)middleware{
+    if (middleware) {
+        [self.middlewares addObject:middleware];
+    }
+}
+-(void)removeMiddleware:(id<WLRRouteMiddleware>)middleware{
+    if ([self.middlewares containsObject:middleware]) {
+        [self.middlewares removeObject:middleware];
+    }
+}
 -(instancetype)init{
     if (self = [super init]) {
         _routeblocks = [NSMutableDictionary dictionary];
@@ -89,7 +106,24 @@
         WLRRouteMatcher * matcher = [self.routeMatchers objectForKey:route];
         request = [matcher createRequestWithURL:URL primitiveParameters:primitiveParameters targetCallBack:targetCallBack];
         if (request) {
-            isHandled = [self handleRouteExpression:route withRequest:request error:&error];
+            NSDictionary * responseObject;
+            for (id<WLRRouteMiddleware>middleware in self.middlewares){
+                if (middleware != NULL &&[middleware respondsToSelector:@selector(middlewareHandleRequestWith:error:)]) {
+                    responseObject = [middleware middlewareHandleRequestWith:&request error:&error];
+                    if ((responseObject != nil )||(error != nil)) {
+                        isHandled = YES;
+                        if (request.targetCallBack) {
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                request.targetCallBack(error,responseObject);
+                            });
+                        }
+                        break;
+                    }
+                }
+            }
+            if (isHandled == NO) {
+                isHandled = [self handleRouteExpression:route withRequest:request error:&error];
+            }
             break;
         }
     }
@@ -105,10 +139,21 @@
         WLRRouteRequest *(^blcok)(WLRRouteRequest *) = handler;
         WLRRouteRequest * backRequest = blcok(request);
         if (backRequest.isConsumed==NO) {
-            if (backRequest.targetCallBack) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    backRequest.targetCallBack(nil,nil);
-                });
+            if (backRequest) {
+                backRequest.isConsumed = YES;
+                if (backRequest.targetCallBack) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        backRequest.targetCallBack(nil,nil);
+                    });
+                }
+            }
+            else{
+                request.isConsumed = YES;
+                if (request.targetCallBack) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        backRequest.targetCallBack([NSError WLRHandleBlockNoTeturnRequest],nil);
+                    });
+                }
             }
         }
         return YES;
@@ -118,7 +163,7 @@
         if (![rHandler shouldHandleWithRequest:request]) {
             return NO;
         }
-       return [rHandler transitionWithRequest:request error:error];
+        return [rHandler transitionWithRequest:request error:error];
     }
     return YES;
 }
