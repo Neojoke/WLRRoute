@@ -1,5 +1,5 @@
 PODS:
-  - WLRRoute (0.0.1)
+  - WLRRoute (0.0.2)
 
 DEPENDENCIES:
   - WLRRoute (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  WLRRoute: 2df8f61649173b2d4a57161ed8ffcf41e7cca7b9
+  WLRRoute: d7ed84c09edc8ba0cea84ff88c98845f31112319
 
 PODFILE CHECKSUM: d2c1d30c37b28d4f92a50a6129b7c5fc7f2e356b
 
