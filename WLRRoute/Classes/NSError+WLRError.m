@@ -11,19 +11,19 @@ NSString * const WLRErrorDomain = @"com.wlrroute.error";
 
 @implementation NSError (WLRError)
 +(NSError *)WLRNotFoundError{
-    return [self WLRErrorWithCode:WLRRouteNotFoundError msg:@"The passed URL does not match a registered route."];
+    return [self WLRErrorWithCode:WLRErrorNotFound msg:@"The passed URL does not match a registered route."];
 }
 +(NSError *)WLRTransitionError{
 
-    return [self WLRErrorWithCode:WLRRouteHandlerTargetOrSourceViewControllerNotSpecifiedError msg:@"TargetViewController or SourceViewController not correct"];
+    return [self WLRErrorWithCode:WLRErrorHandlerTargetOrSourceViewControllerNotSpecified msg:@"TargetViewController or SourceViewController not correct"];
 }
 +(NSError *)WLRHandleBlockNoTeturnRequest
 {
-    return [self WLRErrorWithCode:WLRRouteBlockHandleNoReturnRequestError msg:@"Block handle no turn WLRRouteRequest object"];
+    return [self WLRErrorWithCode:WLRErrorBlockHandleNoReturnRequest msg:@"Block handle no turn WLRRouteRequest object"];
 }
 
 +(NSError *)WLRMiddlewareRaiseErrorWithMsg:(NSString *)error{
-    return [self WLRErrorWithCode:WLRRouteMiddlewareRaiseError msg:[NSString stringWithFormat:@"WLRRouteMiddle raise a error:%@",error]];
+    return [self WLRErrorWithCode:WLRErrorMiddlewareRaiseError msg:[NSString stringWithFormat:@"WLRRouteMiddle raise a error:%@",error]];
 }
 +(NSError *)WLRErrorWithCode:(NSInteger)code msg:(NSString *)msg{
     NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: NSLocalizedString(msg, nil) };

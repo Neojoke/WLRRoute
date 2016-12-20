@@ -7,15 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-typedef NS_ENUM(NSInteger, DPLErrorCodes) {
+typedef NS_ENUM(NSInteger, WLRError) {
     
     /** The passed URL does not match a registered route. */
-    WLRRouteNotFoundError = 45150,
+    WLRErrorNotFound = 45150,
     
     /** The matched route handler does not specify a target view controller. */
-    WLRRouteHandlerTargetOrSourceViewControllerNotSpecifiedError = 45151,
-    WLRRouteBlockHandleNoReturnRequestError = 45152,
-    WLRRouteMiddlewareRaiseError = 45153
+    WLRErrorHandlerTargetOrSourceViewControllerNotSpecified = 45151,
+    WLRErrorBlockHandleNoReturnRequest = 45152,
+    WLRErrorMiddlewareRaiseError = 45153
 };
 @interface NSError (WLRError)
 +(NSError *)WLRNotFoundError;
