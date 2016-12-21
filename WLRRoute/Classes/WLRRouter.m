@@ -163,7 +163,7 @@
         if (![rHandler shouldHandleWithRequest:request]) {
             return NO;
         }
-        return [rHandler transitionWithRequest:request error:error];
+        return [rHandler handleRequest:request error:error];
     }
     return YES;
 }

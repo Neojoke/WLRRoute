@@ -12,6 +12,7 @@
 - (BOOL)shouldHandleWithRequest:(WLRRouteRequest *)request;
 -(UIViewController *)targetViewControllerWithRequest:(WLRRouteRequest *)request;
 -(UIViewController *)sourceViewControllerForTransitionWithRequest:(WLRRouteRequest *)request;
--(BOOL)transitionWithRequest:(WLRRouteRequest *)request error:(NSError *__autoreleasing *)error;
+-(BOOL)handleRequest:(WLRRouteRequest *)request error:(NSError *__autoreleasing *)error;
+-(BOOL)transitionWithWithRequest:(WLRRouteRequest *)request sourceViewController:(UIViewController *)sourceViewController targetViewController:(UIViewController *)targetViewController isPreferModal:(BOOL)isPreferModal error:(NSError *__autoreleasing *)error;
 - (BOOL)preferModalPresentationWithRequest:(WLRRouteRequest *)request;
 @end
