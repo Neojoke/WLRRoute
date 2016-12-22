@@ -27,7 +27,7 @@ WLRRoute是一个简单的iOS路由组件
 详情请移步文章介绍：
 [移动端路由层设计](http://www.jianshu.com/p/be7da3ed4100)
 [一步步构建iOS路由](http://www.jianshu.com/p/3a902f274a3d)
-
+本代码会随着大家的讨论逐步更新，喜欢的来个星✨~谢谢
 ##Usage
 
 ```
