@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface WLRRouteRequest : NSObject<NSCopying>
+/**
+ 请求的URL
+ */
 @property (nonatomic, copy, readonly) NSURL *URL;
 @property(nonatomic,copy)NSString * routeExpression;
 @property (nonatomic, copy, readonly) NSDictionary *queryParameters;

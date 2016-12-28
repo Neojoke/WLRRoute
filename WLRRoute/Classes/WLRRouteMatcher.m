@@ -13,7 +13,6 @@
 @interface WLRRouteMatcher()
 @property(nonatomic,copy) NSString * scheme;
 @property(nonatomic,strong)WLRRegularExpression * regexMatcher;
-@property(nonatomic,copy)NSString * routeExpressionPattern;
 @end
 @implementation WLRRouteMatcher
 +(instancetype)matcherWithRouteExpression:(NSString *)expression{
@@ -28,6 +27,7 @@
         _scheme = parts.count>1?[parts firstObject]:nil;
         _routeExpressionPattern =[parts lastObject];
         _regexMatcher = [WLRRegularExpression expressionWithPattern:_routeExpressionPattern];
+        _originalRouteExpression = routeExpression;
     }
     return self;
 }
