@@ -14,6 +14,9 @@
 @implementation WLRRouteRequest
 -(void)setTargetCallBack:(void (^)(NSError *, id))targetCallBack{
     __weak WLRRouteRequest * weakRequest = self;
+    if (targetCallBack == nil) {
+        return;
+    }
     self.isConsumed = NO;
     _targetCallBack = ^(NSError *error, id responseObject){
         weakRequest.isConsumed = YES;

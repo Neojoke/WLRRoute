@@ -59,7 +59,7 @@
 		4BE9D05A02D4FBC87A2B1C048BACBC9F /* Pods-WLRRoute_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		507252C54DBF189BEFCB0DF8E5D47F05 /* WLRMatchResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRMatchResult.h; sourceTree = "<group>"; };
 		548D947BD412C5F15B6D58F793A03960 /* WLRRoute.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLRRoute.xcconfig; sourceTree = "<group>"; };
-		6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLRRoute_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Tests.a"; path = "libPods-WLRRoute_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA258EA9A1AD4BE383B299EC71E24F3 /* Pods-WLRRoute_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6EEE4C38769B4062C740E91286895485 /* WLRRouteMiddlewareProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRouteMiddlewareProtocol.h; sourceTree = "<group>"; };
 		7227F03F4B410CFCEF70A619FC58D2CD /* Pods-WLRRoute_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLRRoute_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -70,14 +70,14 @@
 		8772E5F3E3320FFBB438EBDFB39A84B2 /* WLRRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRRouter.m; sourceTree = "<group>"; };
 		916AA93E3ABEAD2988ACCEE64DE16381 /* Pods-WLRRoute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		927E18A98819A062C183E3DF162A8944 /* Pods-WLRRoute_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLRRoute_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9927903CB9793899CB29B4CF5B255722 /* WLRRouteMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRouteMatcher.h; sourceTree = "<group>"; };
 		99EF2CC7EB9A42E7E1185ABA78516721 /* NSError+WLRError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSError+WLRError.h"; sourceTree = "<group>"; };
 		A1EF3E7C967ED88D3EF8475626FE2700 /* WLRRouteRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = WLRRouteRequest.m; sourceTree = "<group>"; };
 		A33A5FA263A54B59BE86FE093BB367F6 /* Pods-WLRRoute_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WLRRoute_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Example.a"; path = "libPods-WLRRoute_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9DD33B0AC446DA1FDFB62F8D7A8DEA /* WLRRegularExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WLRRegularExpression.h; sourceTree = "<group>"; };
-		C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWLRRoute.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWLRRoute.a; path = libWLRRoute.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C635FDA0CC681EA11AC09EB532F9D56D /* NSString+WLRQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+WLRQuery.h"; sourceTree = "<group>"; };
 		C6DECA352A9E7BEE28C2321D231645C0 /* Pods-WLRRoute_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLRRoute_Tests-dummy.m"; sourceTree = "<group>"; };
 		CB5BD37AAE6A3B8463441703F6979031 /* Pods-WLRRoute_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Example-resources.sh"; sourceTree = "<group>"; };
@@ -159,8 +159,8 @@
 				77D1F7FFEACC3849B274AC7CC55DC0D0 /* WLRRegularExpression.m */,
 				3CFF7FFCA7EF687CEAB91A94D8A79925 /* WLRRoute.h */,
 				3BED51AEAE05B9F740DD92D4FDDF62A1 /* WLRRouteHandler.h */,
-				9927903CB9793899CB29B4CF5B255722 /* WLRRouteMatcher.h */,
 				E5744F0B00577F5BF22C5B9DE0BB13F8 /* WLRRouteHandler.m */,
+				9927903CB9793899CB29B4CF5B255722 /* WLRRouteMatcher.h */,
 				09860D1768E0ADB517A9B6B2A399D969 /* WLRRouteMatcher.m */,
 				6EEE4C38769B4062C740E91286895485 /* WLRRouteMiddlewareProtocol.h */,
 				498D4EA7D952EF0A51EDF9A00073DB3E /* WLRRouter.h */,
@@ -168,6 +168,7 @@
 				E2AFD2FF6DEC8F2352200430D12B6AED /* WLRRouteRequest.h */,
 				A1EF3E7C967ED88D3EF8475626FE2700 /* WLRRouteRequest.m */,
 			);
+			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -247,6 +248,7 @@
 			children = (
 				706DD8E15EB333C69EA75E394B44BD47 /* Classes */,
 			);
+			name = WLRRoute;
 			path = WLRRoute;
 			sourceTree = "<group>";
 		};

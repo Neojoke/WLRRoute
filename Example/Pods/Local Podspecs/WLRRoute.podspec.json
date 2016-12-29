@@ -1,6 +1,6 @@
 {
   "name": "WLRRoute",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "summary": "WLRRoute is a simple route,it can provide Url matching and custom handler~",
   "description": "It is used to show how to build a route system in iOS app, and I keep it simple and clear.WLRRoute provide url matching , primitive parameters transfer, target callback block , custom handler can overwrite  transitionWithRequest to navigate source to target.",
   "homepage": "https://github.com/Neojoke/WLRRoute",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Neojoke/WLRRoute.git",
-    "tag": "0.0.5"
+    "tag": "0.0.6"
   },
   "platforms": {
     "ios": "7.0"
