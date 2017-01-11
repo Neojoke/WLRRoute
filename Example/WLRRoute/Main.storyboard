@@ -72,7 +72,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fuB-ZU-TRm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IGm-r2-k39">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IGm-r2-k39">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -172,7 +172,6 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="SiginClick:" destination="aMr-fF-IVC" eventType="touchUpInside" id="Bbd-RS-KIR"/>
                                     <action selector="go:" destination="aMr-fF-IVC" eventType="touchUpInside" id="jhp-SY-OLB"/>
                                 </connections>
                             </button>
