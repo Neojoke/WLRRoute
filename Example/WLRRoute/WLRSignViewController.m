@@ -16,6 +16,7 @@
 
 @implementation WLRSignViewController
 - (IBAction)go:(UIButton *)sender {
+    
 }
 
 - (void)viewDidLoad {

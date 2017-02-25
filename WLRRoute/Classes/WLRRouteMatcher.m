@@ -23,6 +23,9 @@
         return nil;
     }
     if (self = [super init]) {
+        /*
+            将路由的url匹配表达式进行分割，分割出scheme和后续部分,后续部分形成WLRRegularExpression对象，并将url匹配表达式保存在_originalRouteExpression变量中
+         */
         NSArray * parts = [routeExpression componentsSeparatedByString:@"://"];
         _scheme = parts.count>1?[parts firstObject]:nil;
         _routeExpressionPattern =[parts lastObject];
