@@ -18,6 +18,7 @@
         return;
     }
     self.isConsumed = NO;
+    
     _targetCallBack = ^(NSError *error, id responseObject){
         weakRequest.isConsumed = YES;
         targetCallBack(error,responseObject);
