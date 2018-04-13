@@ -15,6 +15,33 @@
 @end
 
 @implementation WLRSignViewController
+#pragma mark -Module Protocol impl
++(BOOL)handleRequest:(WLRRouteRequest *)request actionName:(NSString *)actionName completionHandler:(WLRRouteCompletionHandler)completionHandler{
+    UIViewController * controller = [self targetViewControllerWithRequest:request actionName:actionName completionHandler:completionHandler];
+    if (!controller) {
+        return NO;
+    }
+    controller.wlr_request = request;
+    [self transitionWithTargetViewController:controller request:request actionName:actionName];
+    return YES;
+}
++(UIViewController *)targetViewControllerWithRequest:(WLRRouteRequest *)request actionName:(NSString *)actionName completionHandler:(WLRRouteCompletionHandler)completionHandler{
+    UIViewController * vc = [self signViewControllerWithPhone:request[@"phone"]];
+    return vc;
+}
++(UIViewController *)signViewControllerWithPhone:(NSString *)phone{
+    UIStoryboard * story = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    WLRSignViewController * vc = [story instantiateViewControllerWithIdentifier:@"WLRSignViewController"];
+    vc.Phone.text = phone;
+    return vc;
+}
++(void)transitionWithTargetViewController:(UIViewController *)ViewController request:(WLRRouteRequest *)request actionName:(NSString *)actionName{
+    UIViewController * sourceViewController =[UIApplication sharedApplication].windows[0].rootViewController;
+    if ([sourceViewController isKindOfClass:[UINavigationController class]]){
+        UINavigationController * nav = (UINavigationController *)sourceViewController;
+        [nav pushViewController:ViewController animated:YES];
+    }
+}
 - (IBAction)go:(UIButton *)sender {
     
 }
@@ -24,7 +51,9 @@
     self.Phone.text = self.wlr_request[@"phone"];
     // Do any additional setup after loading the view.
 }
-
+-(void)viewDidDisappear:(BOOL)animated{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

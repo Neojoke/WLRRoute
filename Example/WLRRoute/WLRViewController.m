@@ -39,7 +39,7 @@
     }];
 }
 - (IBAction)SiginClick:(UIButton *)sender {
-    [self.router handleURL:[NSURL URLWithString:@"WLRDemo://com.wlrroute.demo/signin/13812345432"] primitiveParameters:nil targetCallBack:^(NSError *error, id responseObject) {
+    [self.router handleURL:[NSURL URLWithString:@"WLRDemo://x-call-back/signin?x-success=WLRDemo%3A%2F%2Fx-call-back%2Fuser&phone=17621425586"] primitiveParameters:nil targetCallBack:^(NSError *error, id responseObject) {
         NSLog(@"SiginCallBack");
     } withCompletionBlock:^(BOOL handled, NSError *error) {
         NSLog(@"SiginHandleCompletion");

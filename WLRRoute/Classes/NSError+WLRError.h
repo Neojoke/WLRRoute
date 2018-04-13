@@ -15,11 +15,13 @@ typedef NS_ENUM(NSInteger, WLRError) {
     /** The matched route handler does not specify a target view controller. */
     WLRErrorHandlerTargetOrSourceViewControllerNotSpecified = 45151,
     WLRErrorBlockHandleNoReturnRequest = 45152,
-    WLRErrorMiddlewareRaiseError = 45153
+    WLRErrorMiddlewareRaiseError = 45153,
+    WLRErrorHandleRequestError = 45154
 };
 @interface NSError (WLRError)
 +(NSError *)WLRNotFoundError;
 +(NSError *)WLRTransitionError;
 +(NSError *)WLRHandleBlockNoTeturnRequest;
 +(NSError *)WLRMiddlewareRaiseErrorWithMsg:(NSString *)error;
++(NSError *)WLRHandleRequestErrorWithMessage:(NSString *)errorMsg;
 @end

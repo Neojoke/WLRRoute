@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface WLRSignViewController : UIViewController
+#import "HBXCALLBACKHandler.h"
+@protocol HBSignModuleProtocol<HBModuleProtocol>
++(UIViewController *)signViewControllerWithPhone:(NSString *)phone;
+@end
+@interface WLRSignViewController : UIViewController<HBSignModuleProtocol>
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef void(^WLRRouteCompletionHandler)(NSError *error,NSDictionary * responseObject);
 @interface WLRRouteRequest : NSObject<NSCopying>
 /**
  请求的URL
@@ -19,7 +19,7 @@
 @property (nonatomic, copy, readonly) NSDictionary *primitiveParams;
 
 @property (nonatomic, strong) NSURL *callbackURL;
-@property(nonatomic,copy)void(^targetCallBack)(NSError *error,id responseObject);
+@property(nonatomic,copy)WLRRouteCompletionHandler targetCallBack;
 @property(nonatomic)BOOL isConsumed;
 - (id)objectForKeyedSubscript:(NSString *)key;
 -(instancetype)initWithURL:(NSURL *)URL routeExpression:(NSString *)routeExpression routeParameters:(NSDictionary *)routeParameters primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(void(^)(NSError * error,id responseObject))targetCallBack;

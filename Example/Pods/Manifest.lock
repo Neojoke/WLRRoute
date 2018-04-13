@@ -1,16 +1,16 @@
 PODS:
-  - WLRRoute (0.0.6)
+  - WLRRoute (0.0.9)
 
 DEPENDENCIES:
   - WLRRoute (from `../`)
 
 EXTERNAL SOURCES:
   WLRRoute:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  WLRRoute: 06e9865a68df9e28a647e892f1294ed33ca27b6a
+  WLRRoute: 1c0989116e8dbfde69975e0300744a1598fffcae
 
 PODFILE CHECKSUM: d2c1d30c37b28d4f92a50a6129b7c5fc7f2e356b
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.4.0

@@ -25,6 +25,10 @@ NSString * const WLRErrorDomain = @"com.wlrroute.error";
 +(NSError *)WLRMiddlewareRaiseErrorWithMsg:(NSString *)error{
     return [self WLRErrorWithCode:WLRErrorMiddlewareRaiseError msg:[NSString stringWithFormat:@"WLRRouteMiddle raise a error:%@",error]];
 }
++(NSError *)WLRHandleRequestErrorWithMessage:(NSString *)errorMsg;
+{
+    return [self WLRErrorWithCode:WLRErrorHandleRequestError msg:[NSString stringWithFormat:@"WLRHandler raise a error:%@",errorMsg]];
+}
 +(NSError *)WLRErrorWithCode:(NSInteger)code msg:(NSString *)msg{
     NSDictionary *userInfo = @{ NSLocalizedDescriptionKey: NSLocalizedString(msg, nil) };
     return [NSError errorWithDomain:WLRErrorDomain code:code userInfo:userInfo];

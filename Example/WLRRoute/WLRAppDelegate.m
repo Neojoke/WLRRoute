@@ -10,7 +10,8 @@
 #import <WLRRoute/WLRRoute.h>
 #import "WLRSignHandler.h"
 #import "WLRUserHandler.h"
-
+#import "HBXCALLBACKHandler.h"
+#import "WLRSignViewController.h"
 @interface WLRAppDelegate()
 @end
 @implementation WLRAppDelegate
@@ -21,7 +22,15 @@
     self.router = [[WLRRouter alloc]init];
     [self.router registerHandler:[[WLRSignHandler alloc]init] forRoute:@"/signin/:phone([0-9]+)"];
     [self.router registerHandler:[[WLRUserHandler alloc]init] forRoute:@"/user"];
-
+    HBXCALLBACKHandler * x_call_back_handler =[[HBXCALLBACKHandler alloc]init];
+    x_call_back_handler.enableException = YES;
+    Class signModuleImplClass = NSClassFromString(@"WLRSignViewController");
+    Class userModuleImplClass = NSClassFromString(@"WLRUserViewController");
+    
+    [x_call_back_handler registeModuleProtocol:@protocol(HBSignModuleProtocol) implClass:signModuleImplClass forActionName:@"/signin"];
+    [x_call_back_handler registeModuleProtocol:@protocol(HBModuleProtocol) implClass:userModuleImplClass forActionName:@"/user"];
+    [self.router registerHandler:x_call_back_handler forRoute:@"x-call-back/:path(.*)"];
+    x_call_back_handler.router = self.router;
     return YES;
 }
 

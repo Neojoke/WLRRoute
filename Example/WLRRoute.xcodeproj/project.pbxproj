@@ -27,6 +27,7 @@
 		76B4BC881E06A1A100D1E590 /* WLRSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4BC871E06A1A100D1E590 /* WLRSignViewController.m */; };
 		76B4BC8B1E06A1AA00D1E590 /* WLRUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4BC8A1E06A1AA00D1E590 /* WLRUserViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B539A64D207DA1B9006B789B /* HBXCALLBACKHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B539A64C207DA1B9006B789B /* HBXCALLBACKHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		A51FE03D28BD66089799BAAB /* Pods-WLRRoute_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLRRoute_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLRRoute_Tests/Pods-WLRRoute_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A70B44062FFC608A80874DF9 /* WLRRoute.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLRRoute.podspec; path = ../WLRRoute.podspec; sourceTree = "<group>"; };
 		B302507AE219196694EE98E8 /* Pods-WLRRoute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLRRoute_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLRRoute_Tests/Pods-WLRRoute_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B539A64B207DA1B9006B789B /* HBXCALLBACKHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXCALLBACKHandler.h; sourceTree = "<group>"; };
+		B539A64C207DA1B9006B789B /* HBXCALLBACKHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXCALLBACKHandler.m; sourceTree = "<group>"; };
 		C510FB8F4568A3C6FF99CC18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F95F48B9A76F6072E199C0FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +158,8 @@
 				76B4BC871E06A1A100D1E590 /* WLRSignViewController.m */,
 				76B4BC891E06A1AA00D1E590 /* WLRUserViewController.h */,
 				76B4BC8A1E06A1AA00D1E590 /* WLRUserViewController.m */,
+				B539A64B207DA1B9006B789B /* HBXCALLBACKHandler.h */,
+				B539A64C207DA1B9006B789B /* HBXCALLBACKHandler.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -349,13 +354,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLRRoute_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A601401B611ABE8D5EB685AE /* [CP] Check Pods Manifest.lock */ = {
@@ -364,13 +372,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WLRRoute_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A8BC8FD0F0FEE36DA1874CE3 /* [CP] Copy Pods Resources */ = {
@@ -414,6 +425,7 @@
 				6003F5A7195388D20070C39A /* WLRViewController.m in Sources */,
 				76B4BC851E06A18E00D1E590 /* WLRUserHandler.m in Sources */,
 				76B4BC8B1E06A1AA00D1E590 /* WLRUserViewController.m in Sources */,
+				B539A64D207DA1B9006B789B /* HBXCALLBACKHandler.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				76B4BC821E06A18400D1E590 /* WLRSignHandler.m in Sources */,
 				76B4BC881E06A1A100D1E590 /* WLRSignViewController.m in Sources */,

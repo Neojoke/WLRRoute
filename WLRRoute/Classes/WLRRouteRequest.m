@@ -12,13 +12,13 @@
 
 @end
 @implementation WLRRouteRequest
--(void)setTargetCallBack:(void (^)(NSError *, id))targetCallBack{
+-(void)setTargetCallBack:(WLRRouteCompletionHandler)targetCallBack{
     __weak WLRRouteRequest * weakRequest = self;
     if (targetCallBack == nil) {
         return;
     }
     self.isConsumed = NO;
-    _targetCallBack = ^(NSError *error, id responseObject){
+    _targetCallBack = ^(NSError *error, NSDictionary * responseObject){
         weakRequest.isConsumed = YES;
         targetCallBack(error,responseObject);
     };
@@ -26,7 +26,7 @@
 }
 -(void)defaultFinishTargetCallBack{
     if (self.targetCallBack && self.isConsumed == NO) {
-        self.targetCallBack(nil,@"正常执行回调");
+        self.targetCallBack(nil,@{@"message":@"call back success"});
     }
 }
 -(instancetype)initWithURL:(NSURL *)URL{
