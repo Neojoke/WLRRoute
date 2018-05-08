@@ -34,7 +34,7 @@
     }
     return self;
 }
--(WLRRouteRequest *)createRequestWithURL:(NSURL *)URL primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(void (^)(NSError *, id))targetCallBack{
+-(WLRRouteRequest *)createRequestWithURL:(NSURL *)URL primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(void (^)(NSError *error, NSDictionary * responseDictObject))targetCallBack{
     NSString * urlString = [NSString stringWithFormat:@"%@%@",URL.host,URL.path];
     if (self.scheme.length && ![self.scheme isEqualToString:URL.scheme]) {
         return nil;
@@ -43,7 +43,15 @@
     if (!result.isMatch) {
         return nil;
     }
-    WLRRouteRequest * request = [[WLRRouteRequest alloc]initWithURL:URL routeExpression:self.routeExpressionPattern routeParameters:result.paramProperties primitiveParameters:primitiveParameters targetCallBack:targetCallBack];
+    __weak  WLRRouteRequest * weakRequest = nil;
+    WLRRouteRequest * request = [[WLRRouteRequest alloc]initWithURL:URL routeExpression:self.routeExpressionPattern routeParameters:result.paramProperties primitiveParameters:primitiveParameters targetCallBack:^(NSError *error, NSDictionary *responseObject) {
+        if (targetCallBack == nil) {
+            return;
+        }
+        weakRequest.isConsumed = YES;
+        targetCallBack(error,responseObject);
+    }];
+    weakRequest = request;
     return request;
     
 }

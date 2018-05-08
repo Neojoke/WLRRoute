@@ -30,5 +30,5 @@
  @param targetCallBack if complete handle or complete block progress,it will call targetCallBack.
  @return a WLRRouteRequest request object.
  */
--(WLRRouteRequest *)createRequestWithURL:(NSURL *)URL primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(void(^)(NSError *, id responseObject))targetCallBack;
+-(WLRRouteRequest *)createRequestWithURL:(NSURL *)URL primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(void(^)(NSError * error, NSDictionary * responseDictObject))targetCallBack;
 @end

@@ -22,7 +22,7 @@ typedef void(^WLRRouteCompletionHandler)(NSError *error,NSDictionary * responseO
 @property(nonatomic,copy)WLRRouteCompletionHandler targetCallBack;
 @property(nonatomic)BOOL isConsumed;
 - (id)objectForKeyedSubscript:(NSString *)key;
--(instancetype)initWithURL:(NSURL *)URL routeExpression:(NSString *)routeExpression routeParameters:(NSDictionary *)routeParameters primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(void(^)(NSError * error,id responseObject))targetCallBack;
+-(instancetype)initWithURL:(NSURL *)URL routeExpression:(NSString *)routeExpression routeParameters:(NSDictionary *)routeParameters primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(WLRRouteCompletionHandler)targetCallBack;
 -(instancetype)initWithURL:(NSURL *)URL;
 -(void)defaultFinishTargetCallBack;
 @end

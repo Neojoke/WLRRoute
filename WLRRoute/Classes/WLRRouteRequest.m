@@ -12,18 +12,18 @@
 
 @end
 @implementation WLRRouteRequest
--(void)setTargetCallBack:(WLRRouteCompletionHandler)targetCallBack{
-    __weak WLRRouteRequest * weakRequest = self;
-    if (targetCallBack == nil) {
-        return;
-    }
-    self.isConsumed = NO;
-    _targetCallBack = ^(NSError *error, NSDictionary * responseObject){
-        weakRequest.isConsumed = YES;
-        targetCallBack(error,responseObject);
-    };
-    
-}
+//-(void)setTargetCallBack:(WLRRouteCompletionHandler)targetCallBack{
+//    __weak WLRRouteRequest * weakRequest = self;
+//    if (targetCallBack == nil) {
+//        return;
+//    }
+//    self.isConsumed = NO;
+//    _targetCallBack = ^(NSError *error, NSDictionary * responseObject){
+//        weakRequest.isConsumed = YES;
+//        targetCallBack(error,responseObject);
+//    };
+//    
+//}
 -(void)defaultFinishTargetCallBack{
     if (self.targetCallBack && self.isConsumed == NO) {
         self.targetCallBack(nil,@{@"message":@"call back success"});
@@ -40,7 +40,7 @@
     }
     return self;
 }
--(instancetype)initWithURL:(NSURL *)URL routeExpression:(NSString *)routeExpression routeParameters:(NSDictionary *)routeParameters primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(void (^)(NSError *, id))targetCallBack{
+-(instancetype)initWithURL:(NSURL *)URL routeExpression:(NSString *)routeExpression routeParameters:(NSDictionary *)routeParameters primitiveParameters:(NSDictionary *)primitiveParameters targetCallBack:(WLRRouteCompletionHandler)targetCallBack{
     if (!URL) {
         return nil;
     }

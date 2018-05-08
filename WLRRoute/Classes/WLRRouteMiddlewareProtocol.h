@@ -19,5 +19,5 @@
  @return if middleware can handle this request and return a responseObject,
  router will handle this request with responseObject and no long transfer.
  */
--(NSDictionary *)middlewareHandleRequestWith:(WLRRouteRequest *__autoreleasing *)primitiveRequest error:(NSError *__autoreleasing *)error;
+-(NSDictionary *)middlewareHandleRequestWith:(WLRRouteRequest *)primitiveRequest error:(NSError *__autoreleasing *)error;
 @end

@@ -22,11 +22,19 @@
     self.router = [[WLRRouter alloc]init];
     [self.router registerHandler:[[WLRSignHandler alloc]init] forRoute:@"/signin/:phone([0-9]+)"];
     [self.router registerHandler:[[WLRUserHandler alloc]init] forRoute:@"/user"];
+    //实现x-call-back跳转协议
+    //实例化x-call-back-handler处理关于"x-call-back"为host的请求
     HBXCALLBACKHandler * x_call_back_handler =[[HBXCALLBACKHandler alloc]init];
+    //是否打开异常，debug状态下打开，方便调试，生产环境下关闭
     x_call_back_handler.enableException = YES;
+    /*
+     支持x-call-back协议的模块，必须实现HBModuleProtocol，有如下步骤
+     1.实现HBModuleProtocol
+     2.通过HBXCALLBACKHandler的实例注册该protocol和实现该protocol的模块类
+     3.router对象注册HBXCALLBACKHandler实例对象
+     */
     Class signModuleImplClass = NSClassFromString(@"WLRSignViewController");
     Class userModuleImplClass = NSClassFromString(@"WLRUserViewController");
-    
     [x_call_back_handler registeModuleProtocol:@protocol(HBSignModuleProtocol) implClass:signModuleImplClass forActionName:@"/signin"];
     [x_call_back_handler registeModuleProtocol:@protocol(HBModuleProtocol) implClass:userModuleImplClass forActionName:@"/user"];
     [self.router registerHandler:x_call_back_handler forRoute:@"x-call-back/:path(.*)"];

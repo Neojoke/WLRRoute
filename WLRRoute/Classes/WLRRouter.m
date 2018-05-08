@@ -109,7 +109,8 @@
             NSDictionary * responseObject;
             for (id<WLRRouteMiddleware>middleware in self.middlewares){
                 if (middleware != NULL &&[middleware respondsToSelector:@selector(middlewareHandleRequestWith:error:)]) {
-                    responseObject = [middleware middlewareHandleRequestWith:&request error:&error];
+                    WLRRouteRequest * copyRequest = [request copy];
+                    responseObject = [middleware middlewareHandleRequestWith:copyRequest error:&error];
                     if ((responseObject != nil )||(error != nil)) {
                         isHandled = YES;
                         if (request.targetCallBack) {
