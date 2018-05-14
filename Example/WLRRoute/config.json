@@ -1,0 +1,19 @@
+{
+  "modules": ["UserModule", "ConditionModule","old_route"],
+  "vc_infos": {
+    "HBLoginViewController": {
+      "StoryBoardName": "Main",
+      "StoryBoardId": "HBLoginViewController"
+    },
+    "HBConditionViewController": {
+      "StoryBoardName": "Main",
+      "StoryBoardId": "HBConditionViewController"
+    }
+  },
+    "module_infos":{
+        "UserModule":{
+            "route_paths":["userModule/login/:phone(*.)","userModule/userInfo/:user_id(*.)"]
+        },
+        "old_route":[];
+    }
+}

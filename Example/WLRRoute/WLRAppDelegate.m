@@ -22,6 +22,9 @@
     self.router = [[WLRRouter alloc]init];
     [self.router registerHandler:[[WLRSignHandler alloc]init] forRoute:@"/signin/:phone([0-9]+)"];
     [self.router registerHandler:[[WLRUserHandler alloc]init] forRoute:@"/user"];
+    [self.router registerBlock:^WLRRouteRequest *(WLRRouteRequest *request) {
+        return nil;
+    } forRoute:@"x-call-back/:action(.*)"];
     //实现x-call-back跳转协议
     //实例化x-call-back-handler处理关于"x-call-back"为host的请求
     HBXCALLBACKHandler * x_call_back_handler =[[HBXCALLBACKHandler alloc]init];
@@ -39,6 +42,18 @@
     [x_call_back_handler registeModuleProtocol:@protocol(HBModuleProtocol) implClass:userModuleImplClass forActionName:@"/user"];
     [self.router registerHandler:x_call_back_handler forRoute:@"x-call-back/:path(.*)"];
     x_call_back_handler.router = self.router;
+    
+    NSData * config_data = [[NSData alloc]initWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"config" ofType:@"json"]];
+    NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:config_data options:NSJSONReadingMutableContainers error:nil];
+    NSArray * modules = [dict objectForKey:@"modules"];
+    NSDictionary * module_infos = [dict objectForKey:@"module_info"];
+    for (NSString * moduleName in modules) {
+        NSDictionary * module_info = [module_infos objectForKey:moduleName];
+        NSArray * module_info_route_paths = [module_info objectForKey:@"route_paths"];
+        for (NSString * routePath in module_info_route_paths) {
+            [x_call_back_handler registeModuleProtocol:@protocol(HBModuleProtocol) implClass:NSClassFromString(moduleName) forActionName:routePath];
+        }
+    }
     return YES;
 }
 
