@@ -28,6 +28,12 @@
 		76B4BC8B1E06A1AA00D1E590 /* WLRUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B4BC8A1E06A1AA00D1E590 /* WLRUserViewController.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B539A64D207DA1B9006B789B /* HBXCALLBACKHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B539A64C207DA1B9006B789B /* HBXCALLBACKHandler.m */; };
+		B583ABAE20A96FC600C88310 /* UserModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B583ABAD20A96FC600C88310 /* UserModule.m */; };
+		B583ABB120A96FD300C88310 /* ConditionModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B583ABB020A96FD300C88310 /* ConditionModule.m */; };
+		B583ABB420A9701400C88310 /* HBConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B583ABB320A9701400C88310 /* HBConditionViewController.m */; };
+		B583ABB720A9702300C88310 /* HBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B583ABB620A9702300C88310 /* HBLoginViewController.m */; };
+		B583ABB920A971C800C88310 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = B583ABB820A971C800C88310 /* config.json */; };
+		B583ABBC20A9772600C88310 /* HBOldRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B583ABBB20A9772600C88310 /* HBOldRoute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,17 @@
 		B302507AE219196694EE98E8 /* Pods-WLRRoute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLRRoute_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLRRoute_Tests/Pods-WLRRoute_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B539A64B207DA1B9006B789B /* HBXCALLBACKHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXCALLBACKHandler.h; sourceTree = "<group>"; };
 		B539A64C207DA1B9006B789B /* HBXCALLBACKHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBXCALLBACKHandler.m; sourceTree = "<group>"; };
+		B583ABAC20A96FC600C88310 /* UserModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModule.h; sourceTree = "<group>"; };
+		B583ABAD20A96FC600C88310 /* UserModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModule.m; sourceTree = "<group>"; };
+		B583ABAF20A96FD300C88310 /* ConditionModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConditionModule.h; sourceTree = "<group>"; };
+		B583ABB020A96FD300C88310 /* ConditionModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConditionModule.m; sourceTree = "<group>"; };
+		B583ABB220A9701400C88310 /* HBConditionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBConditionViewController.h; sourceTree = "<group>"; };
+		B583ABB320A9701400C88310 /* HBConditionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBConditionViewController.m; sourceTree = "<group>"; };
+		B583ABB520A9702300C88310 /* HBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBLoginViewController.h; sourceTree = "<group>"; };
+		B583ABB620A9702300C88310 /* HBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBLoginViewController.m; sourceTree = "<group>"; };
+		B583ABB820A971C800C88310 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config.json; path = WLRRoute/config.json; sourceTree = "<group>"; };
+		B583ABBA20A9772600C88310 /* HBOldRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBOldRoute.h; sourceTree = "<group>"; };
+		B583ABBB20A9772600C88310 /* HBOldRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBOldRoute.m; sourceTree = "<group>"; };
 		C510FB8F4568A3C6FF99CC18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F95F48B9A76F6072E199C0FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +128,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				B583ABB820A971C800C88310 /* config.json */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for WLRRoute */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -145,6 +163,9 @@
 		6003F593195388D20070C39A /* Example for WLRRoute */ = {
 			isa = PBXGroup;
 			children = (
+				B583ABAB20A96FA900C88310 /* Modules */,
+				B583ABAA20A96F6B00C88310 /* ConditionModule */,
+				B583ABA820A96EA100C88310 /* UserModule */,
 				6003F59C195388D20070C39A /* WLRAppDelegate.h */,
 				6003F59D195388D20070C39A /* WLRAppDelegate.m */,
 				76B4BC801E06A18400D1E590 /* WLRSignHandler.h */,
@@ -216,6 +237,37 @@
 				B302507AE219196694EE98E8 /* Pods-WLRRoute_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B583ABA820A96EA100C88310 /* UserModule */ = {
+			isa = PBXGroup;
+			children = (
+				B583ABB520A9702300C88310 /* HBLoginViewController.h */,
+				B583ABB620A9702300C88310 /* HBLoginViewController.m */,
+			);
+			path = UserModule;
+			sourceTree = "<group>";
+		};
+		B583ABAA20A96F6B00C88310 /* ConditionModule */ = {
+			isa = PBXGroup;
+			children = (
+				B583ABB220A9701400C88310 /* HBConditionViewController.h */,
+				B583ABB320A9701400C88310 /* HBConditionViewController.m */,
+			);
+			path = ConditionModule;
+			sourceTree = "<group>";
+		};
+		B583ABAB20A96FA900C88310 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B583ABAC20A96FC600C88310 /* UserModule.h */,
+				B583ABAD20A96FC600C88310 /* UserModule.m */,
+				B583ABAF20A96FD300C88310 /* ConditionModule.h */,
+				B583ABB020A96FD300C88310 /* ConditionModule.m */,
+				B583ABBA20A9772600C88310 /* HBOldRoute.h */,
+				B583ABBB20A9772600C88310 /* HBOldRoute.m */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				B583ABB920A971C800C88310 /* config.json in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -422,12 +475,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* WLRAppDelegate.m in Sources */,
+				B583ABBC20A9772600C88310 /* HBOldRoute.m in Sources */,
+				B583ABB120A96FD300C88310 /* ConditionModule.m in Sources */,
 				6003F5A7195388D20070C39A /* WLRViewController.m in Sources */,
 				76B4BC851E06A18E00D1E590 /* WLRUserHandler.m in Sources */,
+				B583ABB720A9702300C88310 /* HBLoginViewController.m in Sources */,
 				76B4BC8B1E06A1AA00D1E590 /* WLRUserViewController.m in Sources */,
 				B539A64D207DA1B9006B789B /* HBXCALLBACKHandler.m in Sources */,
+				B583ABB420A9701400C88310 /* HBConditionViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				76B4BC821E06A18400D1E590 /* WLRSignHandler.m in Sources */,
+				B583ABAE20A96FC600C88310 /* UserModule.m in Sources */,
 				76B4BC881E06A1A100D1E590 /* WLRSignViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

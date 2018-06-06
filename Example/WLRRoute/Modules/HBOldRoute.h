@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "HBXCALLBACKHandler.h"
 
-@interface HBOldRoute : NSObject<HBModuleProtocol>
+@interface HBOldRoute : NSObject
 
 @end

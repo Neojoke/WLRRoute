@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "HBXCALLBACKHandler.h"
 
-@interface ConditionModule : NSObject<HBModuleProtocol>
+@interface ConditionModule : NSObject
 +(UIViewController *)ConditionViewController:(NSString *)type;
 @end

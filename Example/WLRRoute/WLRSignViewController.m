@@ -45,10 +45,15 @@
 - (IBAction)go:(UIButton *)sender {
     
 }
-
+-(void)setValue:(id)value forUndefinedKey:(NSString *)key{
+    
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.Phone.text = self.wlr_request[@"phone"];
+    if (self.title_name) {
+        self.title = self.title_name;
+    }
     // Do any additional setup after loading the view.
 }
 -(void)viewDidDisappear:(BOOL)animated{

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "HBXCALLBACKHandler.h"
-@interface WLRUserViewController : UIViewController<HBModuleProtocol>
+@interface WLRUserViewController : UIViewController
 
 @end

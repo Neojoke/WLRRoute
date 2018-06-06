@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "HBXCALLBACKHandler.h"
-@interface UserModule : NSObject<HBModuleProtocol>
+@interface UserModule : NSObject
 +(UIViewController *)LoginViewController:(NSString *)Phone;
 @end

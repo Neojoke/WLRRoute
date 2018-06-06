@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "HBXCALLBACKHandler.h"
-@protocol HBSignModuleProtocol<HBModuleProtocol>
-+(UIViewController *)signViewControllerWithPhone:(NSString *)phone;
-@end
-@interface WLRSignViewController : UIViewController<HBSignModuleProtocol>
-
+//@protocol HBSignModuleProtocol<HBModuleProtocol>
+//+(UIViewController *)signViewControllerWithPhone:(NSString *)phone;
+//@end
+@interface WLRSignViewController : UIViewController
+@property(nonatomic,copy)NSString * title_name;
 @end
