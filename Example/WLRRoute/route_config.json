@@ -1,0 +1,33 @@
+{
+  "vc_config_infos": {
+      "HBIPOCalendarController":{
+          "className":"HBIPOCalendarController",
+          "storyBoardName": "Main",
+          "storyBoardId": "HBIPOCalendarController",
+          "initWay":1
+      },
+      "HBConditionalCommonViewController":{
+          "className":"HBConditionalCommonViewController",
+          "initWay":2,
+          "factoryInitialInfo":{
+              "targetClassName":"HBConditionalCommonViewController",
+              "selectorString":"conditionalCreateWithConditionalType:direction:",
+              "paramsInfoString":["type#uint","direction#s"]
+          }
+      }
+  },
+    "route_expression_infos":{
+        "trading/stockCalendar":{
+            "routeExpression":"trading/stockCalendar",
+            "className":"HBIPOCalendarController",
+            "isModal":false,
+            "kvcMapInfo":{}
+        },
+        "condition/conditionView":{
+            "routeExpression":"condition/conditionView",
+            "className":"HBConditionalCommonViewController",
+            "isModal":false,
+            "kvcMapInfo":{"type":"type","direction":"direction"}
+        }
+    }
+}

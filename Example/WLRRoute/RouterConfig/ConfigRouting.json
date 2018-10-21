@@ -1,0 +1,31 @@
+{
+    "sign/default":{
+        "routeExpression":"/sign/default",
+        "isModal":false,
+        "initWay":0,
+        "className":"WLRSignViewController"
+    },
+    "sign/storyBoard":{
+        "routeExpression":"/sign/storyBoard",
+        "isModal":false,
+        "initWay":1,
+        "className":"WLRSignViewController",
+        "storyBoardName":"Main",
+        "storyBoardId":"WLRSignViewController"
+    },
+    "sign/staticMethod":{
+        "routeExpression":"/sign/staticMethod",
+        "isModal":false,
+        "initWay":2,
+        "className":"WLRSignViewController",
+        "targetClassName":"WLRSignViewController",
+        "selectorString":"vcwith:state:",
+        "selectorArginfos":[{
+            "argName":"person",
+            "argClassName":"Person"
+        },{
+            "argName":"state",
+            "argClassName":"NSNumber"
+        }]
+    }
+}

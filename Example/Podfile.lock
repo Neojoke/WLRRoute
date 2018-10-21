@@ -1,16 +1,23 @@
 PODS:
-  - WLRRoute (0.0.9)
+  - MJExtension (3.0.15.1)
+  - WLRRoute (0.1.1)
 
 DEPENDENCIES:
+  - MJExtension
   - WLRRoute (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MJExtension
 
 EXTERNAL SOURCES:
   WLRRoute:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  WLRRoute: 1c0989116e8dbfde69975e0300744a1598fffcae
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  WLRRoute: acb9212438712dd31ffaf0ad00d759074fcaa268
 
-PODFILE CHECKSUM: d2c1d30c37b28d4f92a50a6129b7c5fc7f2e356b
+PODFILE CHECKSUM: 6cdbef6622812cadcac95473dbdbc8b87d99b579
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

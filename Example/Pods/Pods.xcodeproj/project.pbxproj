@@ -7,120 +7,188 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03F35CFC5EF6A1E417C220B22F122A61 /* WLRRoute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1574E4613857A61B456E50443F937A08 /* WLRRoute-dummy.m */; };
-		094F6801D01D61855611EA900470E243 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		22A5EA6C1B22B9259F5645CFD2A57981 /* UIViewController+WLRRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F25A997FAB263816865CC21B02334A /* UIViewController+WLRRoute.m */; };
-		31C240E9C531FC1F4EAE1BE91A450311 /* WLRRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D98CA61DFBA511AF631025D4C7228F3 /* WLRRegularExpression.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3EA433F04142384925F26FE7FC29B19F /* WLRRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0B427F552482C310FF634EC02F8FAE /* WLRRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		499CB9F506B001137A5674E6E0C82CD0 /* NSString+WLRQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F0E2E63E1A9F1F4A997E73E2F82ED6 /* NSString+WLRQuery.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4FE3B7929FB745DCD78859B1BD28600D /* WLRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6551AA2C2C044AE90D50285A007F3133 /* WLRRouter.m */; };
-		63B4FEE55B76B72DEDD1116772A4C839 /* NSError+WLRError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A3499A578AC6D5CFDF52583793535FC /* NSError+WLRError.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		68720D3ED3038017BC8B4803F8B3E391 /* WLRRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC62E1E903453E81418CFA4E907ECB2 /* WLRRouteRequest.m */; };
-		75BA816613B8DF5766BEF9525D477E5A /* WLRRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE2A74FCD76AC86A66D3CB49FBF886 /* WLRRegularExpression.m */; };
-		78BD936866C31DF9960F74D55111A6C6 /* WLRRouteMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D8E98939740907C921F9983B38F93F5 /* WLRRouteMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7B20A9903CD9DE4210E0CB357E01076A /* Pods-WLRRoute_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DECA352A9E7BEE28C2321D231645C0 /* Pods-WLRRoute_Tests-dummy.m */; };
-		7FE603587A8F313F92205BAB662151C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8118B175281D8DCA17E59CABE9D970A6 /* NSError+WLRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B5C426D09ABEC71281632B57292E8 /* NSError+WLRError.m */; };
-		81893961B9D133A6CCC3737DC0806A0D /* WLRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E59F9D9C4249A30C74A63359D28A84 /* WLRRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9592EA7D47050DD6CCDA8E306773C6D9 /* NSString+WLRQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AEFED308BB297099308E1966D92DF /* NSString+WLRQuery.m */; };
-		9FE0755BDB4F5D0FEC92D63AB5726EBE /* WLRRouteMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FECD8607EA831E97BA80145B8610E /* WLRRouteMatcher.m */; };
-		A17A9511C4E41BC514B2D3A215902AD3 /* WLRMatchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3A0A9A2874F8C3C5549BA340D64F91 /* WLRMatchResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A394D611AD11875D326D60682A195D60 /* WLRRouteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 748131DEABB8F6137E4D9FF0AC3FAAC5 /* WLRRouteHandler.m */; };
-		AE78A2BE1280F8E6A73C4E05BC4C373D /* WLRRouteHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 824E4BEE1F2C250C5FC532BBBF646E4A /* WLRRouteHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C92B1F83D4FFEC6607126769E804D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DA48FB80E7807878FE7737F3677D0BE1 /* UIViewController+WLRRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 728AF69CD96BAB90702BAD99356E8C47 /* UIViewController+WLRRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DDE4DB2761A428C4D2420A66BAC592B0 /* WLRRouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E201D313AF4ECE19118D5ED0D5970EC /* WLRRouteRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E76FDC00EC4642D1BB1FD8C0246D06D6 /* WLRMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F827A807AE5FB0C0B4B5CC7CFE3E1B7 /* WLRMatchResult.m */; };
-		E9E4CC7AFFAECDC8853AF4D2C057A2DC /* Pods-WLRRoute_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF980608BA431C351E71A9648E4220D /* Pods-WLRRoute_Example-dummy.m */; };
-		F8D2B14D570F25D5443E2AADB80995B9 /* WLRRouteMiddlewareProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 694E0E15C15EC48564B719892C689935 /* WLRRouteMiddlewareProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		01BA59F0FEA14D0025ED5B2AB5A3AA97 /* WLRRegularExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D98CA61DFBA511AF631025D4C7228F3 /* WLRRegularExpression.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		055F5AFB247AD0CC9A81E3E1764AE2C4 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 2886854314700B76857B2FDAFC692C68 /* MJPropertyKey.m */; };
+		09A6ED24FAE778271EF9E9401DFCCD9F /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = E805CC966F6FE989A64C28C1FA8CD11A /* MJFoundation.m */; };
+		0C28022247BC4DE17E244B6B27D34616 /* WLRRouteHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 824E4BEE1F2C250C5FC532BBBF646E4A /* WLRRouteHandler.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0CE641B685366A282A6ED15661BA1C8A /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = A9B2677CEDFC53AC1A6F03CAEDFC8519 /* MJFoundation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		19ACA68944CB470AFB183D4A47DDE36D /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C45B50FDF3018B1977B7F0CEE2DB97 /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		20B729F92D43FEB1D1AF995B8D415869 /* NSString+WLRQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 89F0E2E63E1A9F1F4A997E73E2F82ED6 /* NSString+WLRQuery.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2228B859487021B2A8D28DA4CF9A099F /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BEDBB9BE75FCE37CAB19209B761D1C /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2A23BC88F400142A1A112C0AD4D76A42 /* WLRRouteHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 748131DEABB8F6137E4D9FF0AC3FAAC5 /* WLRRouteHandler.m */; };
+		2A8DB4ED258EEEBDF361CB51977E149B /* WLRRouteMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D8E98939740907C921F9983B38F93F5 /* WLRRouteMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2FC67007F9F058BB0C1665CDE4E3AA00 /* UIViewController+WLRRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 728AF69CD96BAB90702BAD99356E8C47 /* UIViewController+WLRRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		329A641A71B1D310A9C510928D203179 /* NSError+WLRError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A3499A578AC6D5CFDF52583793535FC /* NSError+WLRError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		375247849CB02E73C168547F9340161F /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D2055A0B7DBA5C02906EBD23B93668 /* MJProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		38C9F17E834F5663C9C1FF3E557E7596 /* WLRRouteMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4FECD8607EA831E97BA80145B8610E /* WLRRouteMatcher.m */; };
+		419055EB64814AFBD442AEEDA2F750D7 /* UIViewController+WLRRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F25A997FAB263816865CC21B02334A /* UIViewController+WLRRoute.m */; };
+		432BD5A9388381BD2C39F838C14EEC2A /* WLRRouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E201D313AF4ECE19118D5ED0D5970EC /* WLRRouteRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4713E827D3976D9AC3F5CCCC02B03F33 /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D47F4C4484276076CCE7FAA342A076 /* NSObject+MJCoding.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4E976C2ECC15109C33C62B5E1CBBFFB3 /* WLRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6551AA2C2C044AE90D50285A007F3133 /* WLRRouter.m */; };
+		4F7B64646448008A8A757D5DA7F27932 /* WLRRouteMiddlewareProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 694E0E15C15EC48564B719892C689935 /* WLRRouteMiddlewareProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		55311DEC48F63FEACFF81321BE403E36 /* NSObject+MJKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = F21FAC370B493D3E54D010D0375081C5 /* NSObject+MJKeyValue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B0A5622F94887D00929F01D18B2E73C /* WLRRoute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1574E4613857A61B456E50443F937A08 /* WLRRoute-dummy.m */; };
+		5C889A89DBCEFC9B05910FB52185B88F /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F5F6B122ED35D81D52A58584F3C868 /* MJPropertyType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		657B8FA6A7FBDB354F29A85F7EAB0C2C /* WLRRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D0B427F552482C310FF634EC02F8FAE /* WLRRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68E35F4C37E01704933C4CB94FFFC564 /* WLRMatchResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F827A807AE5FB0C0B4B5CC7CFE3E1B7 /* WLRMatchResult.m */; };
+		6DECBB48498977E9F29BA2EFF65318E2 /* NSString+WLRQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AEFED308BB297099308E1966D92DF /* NSString+WLRQuery.m */; };
+		716FD56E3F358D2A9F92C59FB4C5F79F /* Pods-WLRRoute_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DECA352A9E7BEE28C2321D231645C0 /* Pods-WLRRoute_Tests-dummy.m */; };
+		7384FC985DE4051B06428ED838F30564 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = B15E2585BFF651280ACB85BD9B93173E /* MJPropertyType.m */; };
+		7536EF2F726F99EDB2251CF72450B71A /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D054C5D4C8C20CCC0F17CD88D1C56B /* MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7EAAA7502381E4006BB732C6E8296EF7 /* WLRRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE2A74FCD76AC86A66D3CB49FBF886 /* WLRRegularExpression.m */; };
+		9911F4C7259C55D4B9720C31BF1F66FB /* Pods-WLRRoute_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF980608BA431C351E71A9648E4220D /* Pods-WLRRoute_Example-dummy.m */; };
+		A8F0A58038991D74C79E2F01C0D4AAFD /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C370FE1DC35E4F513DCC252F76D71FCD /* NSString+MJExtension.m */; };
+		B24501935DD44770EA9A7F339A1DCCFC /* WLRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = C6E59F9D9C4249A30C74A63359D28A84 /* WLRRouter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BA111DE62C729B3D92AD151154612ABE /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB0D9E891E8BBEF6CF988F44E6D7C51 /* NSString+MJExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5189E3E0A3F54D23AADDA3C041AC11D /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A8DD424E4C08CD3AD2F44997154FD86 /* NSObject+MJClass.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C70510E68308A5878BDD42DEE58482A4 /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75EA0EF323861A82276792A27D2C4C /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CAC063AD1FBE07ADDE816C8DB6637ABC /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = BA035B65848DF3841266D688AAF78FD4 /* NSObject+MJKeyValue.m */; };
+		D1AC81E3FF18E35DEA159DEE4BD06EDF /* WLRMatchResult.h in Headers */ = {isa = PBXBuildFile; fileRef = DE3A0A9A2874F8C3C5549BA340D64F91 /* WLRMatchResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D79DE443F96DE6CEA9F52F25C6FF1B7C /* WLRRouteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC62E1E903453E81418CFA4E907ECB2 /* WLRRouteRequest.m */; };
+		E1045472BEE4D8DDF64EA62BF5DFCD7A /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4117123D055C2C8A4ED2202EECD608 /* MJExtensionConst.m */; };
+		E958A7EAB0BFBE6F403091626AC34718 /* NSError+WLRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6B5C426D09ABEC71281632B57292E8 /* NSError+WLRError.m */; };
+		EDE999535FE80CBA5C42423F9C2BEBD3 /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0751C584CCDB02E29ADAA2DB621590C /* MJExtension-dummy.m */; };
+		F224868ED206300DF15F03F26C008CD5 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6C8F2B47A5951406961102479A3E91 /* NSObject+MJCoding.m */; };
+		F2D29E13A5BC9925E0D6FDAC40794D19 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = AEAA4C5E4380E7DEE2470855207CB574 /* NSObject+MJProperty.m */; };
+		F5B2B2DE914A9FE380F189FD3AD64DF3 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C996E35DAAAA89E83B7AB82B2DE109 /* MJProperty.m */; };
+		FB5D3F0621978B45C7695CDCAD4C9FF1 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ECFB15548C4C003EE6C0F33EF25AB4 /* NSObject+MJClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2ECD47A11343D087B4DEAB818081926C /* PBXContainerItemProxy */ = {
+		14CF6ECF4FB1D06886B074F6AFE4B161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC2C61D5C8EEA6BF66E4A28BE73B205D;
+			remoteGlobalIDString = 7EF672B66467B3C0AFA5CC918E2A2B88;
 			remoteInfo = WLRRoute;
+		};
+		725672DA78873F8B79D11E2086152E42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B640554BE1960135664FA3E2B45A13BF;
+			remoteInfo = "Pods-WLRRoute_Example";
+		};
+		F7348A164BB01393CE3EE5184EA1217F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDE2C47E2D60AE7740EA60996745639A;
+			remoteInfo = MJExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		097B60B98F8AC53DAACDC961C6E1E95C /* Pods-WLRRoute_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLRRoute_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C803E6E73D05356B318211EC5A65FA5 /* libPods-WLRRoute_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Example.a"; path = "libPods-WLRRoute_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1574E4613857A61B456E50443F937A08 /* WLRRoute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WLRRoute-dummy.m"; sourceTree = "<group>"; };
 		1C1EFA93AE723C443C885F7F4876C76C /* Pods-WLRRoute_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Example-frameworks.sh"; sourceTree = "<group>"; };
 		1D0B427F552482C310FF634EC02F8FAE /* WLRRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRRoute.h; path = WLRRoute/Classes/WLRRoute.h; sourceTree = "<group>"; };
 		20C91196B5B5958B4A0BD93D3520586B /* Pods-WLRRoute_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		23389EC0856E9437DA62989148CF8517 /* WLRRoute.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLRRoute.xcconfig; sourceTree = "<group>"; };
 		285004143A4EA7EF4B6BDF34D07DA663 /* WLRRoute-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLRRoute-prefix.pch"; sourceTree = "<group>"; };
+		2886854314700B76857B2FDAFC692C68 /* MJPropertyKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyKey.m; path = MJExtension/MJPropertyKey.m; sourceTree = "<group>"; };
+		2A4117123D055C2C8A4ED2202EECD608 /* MJExtensionConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJExtensionConst.m; path = MJExtension/MJExtensionConst.m; sourceTree = "<group>"; };
+		32D47F4C4484276076CCE7FAA342A076 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJCoding.h"; path = "MJExtension/NSObject+MJCoding.h"; sourceTree = "<group>"; };
 		39A9DF93A385207408D002820AC032A8 /* WLRRoute.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = WLRRoute.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		475BFBB493C1D2F07172E5AB62A14B0F /* MJExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-prefix.pch"; sourceTree = "<group>"; };
+		49D2055A0B7DBA5C02906EBD23B93668 /* MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = MJExtension/MJProperty.h; sourceTree = "<group>"; };
 		4BE9D05A02D4FBC87A2B1C048BACBC9F /* Pods-WLRRoute_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C7E07E55D9D9FB04C0FCA90873A82E5 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJExtension.a; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		57ECFB15548C4C003EE6C0F33EF25AB4 /* NSObject+MJClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJClass.m"; path = "MJExtension/NSObject+MJClass.m"; sourceTree = "<group>"; };
 		5AC62E1E903453E81418CFA4E907ECB2 /* WLRRouteRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLRRouteRequest.m; path = WLRRoute/Classes/WLRRouteRequest.m; sourceTree = "<group>"; };
 		6551AA2C2C044AE90D50285A007F3133 /* WLRRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLRRouter.m; path = WLRRoute/Classes/WLRRouter.m; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		65D20C551C40885F13FED826F644E701 /* MJExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJExtension.xcconfig; sourceTree = "<group>"; };
 		694E0E15C15EC48564B719892C689935 /* WLRRouteMiddlewareProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRRouteMiddlewareProtocol.h; path = WLRRoute/Classes/WLRRouteMiddlewareProtocol.h; sourceTree = "<group>"; };
 		6A3499A578AC6D5CFDF52583793535FC /* NSError+WLRError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+WLRError.h"; path = "WLRRoute/Classes/NSError+WLRError.h"; sourceTree = "<group>"; };
+		6A8DD424E4C08CD3AD2F44997154FD86 /* NSObject+MJClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJClass.h"; path = "MJExtension/NSObject+MJClass.h"; sourceTree = "<group>"; };
 		6CAE2A74FCD76AC86A66D3CB49FBF886 /* WLRRegularExpression.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLRRegularExpression.m; path = WLRRoute/Classes/WLRRegularExpression.m; sourceTree = "<group>"; };
-		6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Tests.a"; path = "libPods-WLRRoute_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA258EA9A1AD4BE383B299EC71E24F3 /* Pods-WLRRoute_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6E201D313AF4ECE19118D5ED0D5970EC /* WLRRouteRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRRouteRequest.h; path = WLRRoute/Classes/WLRRouteRequest.h; sourceTree = "<group>"; };
 		7227F03F4B410CFCEF70A619FC58D2CD /* Pods-WLRRoute_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLRRoute_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		728AF69CD96BAB90702BAD99356E8C47 /* UIViewController+WLRRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+WLRRoute.h"; path = "WLRRoute/Classes/UIViewController+WLRRoute.h"; sourceTree = "<group>"; };
+		74736BA5048AABEBEB055EF9FE2F06BB /* libPods-WLRRoute_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Tests.a"; path = "libPods-WLRRoute_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		748131DEABB8F6137E4D9FF0AC3FAAC5 /* WLRRouteHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLRRouteHandler.m; path = WLRRoute/Classes/WLRRouteHandler.m; sourceTree = "<group>"; };
+		76C45B50FDF3018B1977B7F0CEE2DB97 /* MJExtensionConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtensionConst.h; path = MJExtension/MJExtensionConst.h; sourceTree = "<group>"; };
 		7D8E98939740907C921F9983B38F93F5 /* WLRRouteMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRRouteMatcher.h; path = WLRRoute/Classes/WLRRouteMatcher.h; sourceTree = "<group>"; };
 		824E4BEE1F2C250C5FC532BBBF646E4A /* WLRRouteHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRRouteHandler.h; path = WLRRoute/Classes/WLRRouteHandler.h; sourceTree = "<group>"; };
 		83DA7E73122934C700D036349C96F21B /* Pods-WLRRoute_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLRRoute_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8492AA40CE0D0379F4F39EEA4C2E4724 /* Pods-WLRRoute_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Tests-resources.sh"; sourceTree = "<group>"; };
 		89F0E2E63E1A9F1F4A997E73E2F82ED6 /* NSString+WLRQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+WLRQuery.h"; path = "WLRRoute/Classes/NSString+WLRQuery.h"; sourceTree = "<group>"; };
 		8A4FECD8607EA831E97BA80145B8610E /* WLRRouteMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLRRouteMatcher.m; path = WLRRoute/Classes/WLRRouteMatcher.m; sourceTree = "<group>"; };
+		8C6C8F2B47A5951406961102479A3E91 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJCoding.m"; path = "MJExtension/NSObject+MJCoding.m"; sourceTree = "<group>"; };
 		8E6B5C426D09ABEC71281632B57292E8 /* NSError+WLRError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+WLRError.m"; path = "WLRRoute/Classes/NSError+WLRError.m"; sourceTree = "<group>"; };
 		8F827A807AE5FB0C0B4B5CC7CFE3E1B7 /* WLRMatchResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WLRMatchResult.m; path = WLRRoute/Classes/WLRMatchResult.m; sourceTree = "<group>"; };
 		916AA93E3ABEAD2988ACCEE64DE16381 /* Pods-WLRRoute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		927E18A98819A062C183E3DF162A8944 /* Pods-WLRRoute_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLRRoute_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D98CA61DFBA511AF631025D4C7228F3 /* WLRRegularExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRRegularExpression.h; path = WLRRoute/Classes/WLRRegularExpression.h; sourceTree = "<group>"; };
+		A0C996E35DAAAA89E83B7AB82B2DE109 /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
 		A33A5FA263A54B59BE86FE093BB367F6 /* Pods-WLRRoute_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLRRoute_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A9B2677CEDFC53AC1A6F03CAEDFC8519 /* MJFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJFoundation.h; path = MJExtension/MJFoundation.h; sourceTree = "<group>"; };
 		A9F25A997FAB263816865CC21B02334A /* UIViewController+WLRRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+WLRRoute.m"; path = "WLRRoute/Classes/UIViewController+WLRRoute.m"; sourceTree = "<group>"; };
-		AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WLRRoute_Example.a"; path = "libPods-WLRRoute_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEAA4C5E4380E7DEE2470855207CB574 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJProperty.m"; path = "MJExtension/NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		B15E2585BFF651280ACB85BD9B93173E /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
+		B6F5F6B122ED35D81D52A58584F3C868 /* MJPropertyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyType.h; path = MJExtension/MJPropertyType.h; sourceTree = "<group>"; };
+		B9BEDBB9BE75FCE37CAB19209B761D1C /* NSObject+MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "MJExtension/NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		BA035B65848DF3841266D688AAF78FD4 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJKeyValue.m"; path = "MJExtension/NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		BCA2C909B6605FB4F9D31BE817561EAF /* libWLRRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWLRRoute.a; path = libWLRRoute.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A72A4D23F1F0CE37AE6DA1D6FCB27 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libWLRRoute.a; path = libWLRRoute.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D054C5D4C8C20CCC0F17CD88D1C56B /* MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = MJExtension/MJExtension.h; sourceTree = "<group>"; };
+		C370FE1DC35E4F513DCC252F76D71FCD /* NSString+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "MJExtension/NSString+MJExtension.m"; sourceTree = "<group>"; };
 		C6DECA352A9E7BEE28C2321D231645C0 /* Pods-WLRRoute_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLRRoute_Tests-dummy.m"; sourceTree = "<group>"; };
 		C6E59F9D9C4249A30C74A63359D28A84 /* WLRRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRRouter.h; path = WLRRoute/Classes/WLRRouter.h; sourceTree = "<group>"; };
 		CB5BD37AAE6A3B8463441703F6979031 /* Pods-WLRRoute_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLRRoute_Example-resources.sh"; sourceTree = "<group>"; };
 		DE3A0A9A2874F8C3C5549BA340D64F91 /* WLRMatchResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WLRMatchResult.h; path = WLRRoute/Classes/WLRMatchResult.h; sourceTree = "<group>"; };
 		DEA540A05E291C4D369C00D726B0F83F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E805CC966F6FE989A64C28C1FA8CD11A /* MJFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJFoundation.m; path = MJExtension/MJFoundation.m; sourceTree = "<group>"; };
 		E96AEFED308BB297099308E1966D92DF /* NSString+WLRQuery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+WLRQuery.m"; path = "WLRRoute/Classes/NSString+WLRQuery.m"; sourceTree = "<group>"; };
+		EA75EA0EF323861A82276792A27D2C4C /* MJPropertyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = MJExtension/MJPropertyKey.h; sourceTree = "<group>"; };
 		ECF980608BA431C351E71A9648E4220D /* Pods-WLRRoute_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLRRoute_Example-dummy.m"; sourceTree = "<group>"; };
+		F0751C584CCDB02E29ADAA2DB621590C /* MJExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJExtension-dummy.m"; sourceTree = "<group>"; };
+		F21FAC370B493D3E54D010D0375081C5 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJKeyValue.h"; path = "MJExtension/NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		FDB0D9E891E8BBEF6CF988F44E6D7C51 /* NSString+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MJExtension.h"; path = "MJExtension/NSString+MJExtension.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06D00D05F1017845AECF96BE867563C0 /* Frameworks */ = {
+		1F1E85D486F3C90D3BF558C4AF243246 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE603587A8F313F92205BAB662151C4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D19D71351293AE6066F31A53A4E0D8B8 /* Frameworks */ = {
+		39E2B3197962BBE6E80DA7860BC2E209 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				094F6801D01D61855611EA900470E243 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB03C66B22ACA0D6AEF8B77A1520EF00 /* Frameworks */ = {
+		3E409949415212CB8CE4496EE6A814A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92B1F83D4FFEC6607126769E804D52E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB79BAA51253F1D3C305A6AA5E815F97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		38B4126898C7D6B03496E1EEBFCF9E51 /* Pods-WLRRoute_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,13 +204,44 @@
 			path = "Target Support Files/Pods-WLRRoute_Tests";
 			sourceTree = "<group>";
 		};
+		529D3B485A67B67E42D2978E16209545 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C2D054C5D4C8C20CCC0F17CD88D1C56B /* MJExtension.h */,
+				76C45B50FDF3018B1977B7F0CEE2DB97 /* MJExtensionConst.h */,
+				2A4117123D055C2C8A4ED2202EECD608 /* MJExtensionConst.m */,
+				A9B2677CEDFC53AC1A6F03CAEDFC8519 /* MJFoundation.h */,
+				E805CC966F6FE989A64C28C1FA8CD11A /* MJFoundation.m */,
+				49D2055A0B7DBA5C02906EBD23B93668 /* MJProperty.h */,
+				A0C996E35DAAAA89E83B7AB82B2DE109 /* MJProperty.m */,
+				EA75EA0EF323861A82276792A27D2C4C /* MJPropertyKey.h */,
+				2886854314700B76857B2FDAFC692C68 /* MJPropertyKey.m */,
+				B6F5F6B122ED35D81D52A58584F3C868 /* MJPropertyType.h */,
+				B15E2585BFF651280ACB85BD9B93173E /* MJPropertyType.m */,
+				6A8DD424E4C08CD3AD2F44997154FD86 /* NSObject+MJClass.h */,
+				57ECFB15548C4C003EE6C0F33EF25AB4 /* NSObject+MJClass.m */,
+				32D47F4C4484276076CCE7FAA342A076 /* NSObject+MJCoding.h */,
+				8C6C8F2B47A5951406961102479A3E91 /* NSObject+MJCoding.m */,
+				F21FAC370B493D3E54D010D0375081C5 /* NSObject+MJKeyValue.h */,
+				BA035B65848DF3841266D688AAF78FD4 /* NSObject+MJKeyValue.m */,
+				B9BEDBB9BE75FCE37CAB19209B761D1C /* NSObject+MJProperty.h */,
+				AEAA4C5E4380E7DEE2470855207CB574 /* NSObject+MJProperty.m */,
+				FDB0D9E891E8BBEF6CF988F44E6D7C51 /* NSString+MJExtension.h */,
+				C370FE1DC35E4F513DCC252F76D71FCD /* NSString+MJExtension.m */,
+				B87D2DAA6189080E711E8C7D0EA67773 /* Support Files */,
+			);
+			name = MJExtension;
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				9CAFBDF7A125B708B3BCBC8C07B292CB /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				B87940CAECC7991B5564E3594617B573 /* Products */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				88FDEAC399DE779333B834CB61569CEF /* Pods */,
+				904F12B6189887129DD440E59A54D743 /* Products */,
 				7F4B2A4DE8BF5175BAC932319EA2F9B0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -154,6 +253,14 @@
 				38B4126898C7D6B03496E1EEBFCF9E51 /* Pods-WLRRoute_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		88FDEAC399DE779333B834CB61569CEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				529D3B485A67B67E42D2978E16209545 /* MJExtension */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8C846DBFD5C969AF00207A21A7347689 /* WLRRoute */ = {
@@ -186,6 +293,17 @@
 			path = ../..;
 			sourceTree = "<group>";
 		};
+		904F12B6189887129DD440E59A54D743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C7E07E55D9D9FB04C0FCA90873A82E5 /* libMJExtension.a */,
+				0C803E6E73D05356B318211EC5A65FA5 /* libPods-WLRRoute_Example.a */,
+				74736BA5048AABEBEB055EF9FE2F06BB /* libPods-WLRRoute_Tests.a */,
+				BCA2C909B6605FB4F9D31BE817561EAF /* libWLRRoute.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		9CAFBDF7A125B708B3BCBC8C07B292CB /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,22 +327,15 @@
 			path = "Target Support Files/Pods-WLRRoute_Example";
 			sourceTree = "<group>";
 		};
-		B87940CAECC7991B5564E3594617B573 /* Products */ = {
+		B87D2DAA6189080E711E8C7D0EA67773 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */,
-				6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */,
-				C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */,
+				65D20C551C40885F13FED826F644E701 /* MJExtension.xcconfig */,
+				F0751C584CCDB02E29ADAA2DB621590C /* MJExtension-dummy.m */,
+				475BFBB493C1D2F07172E5AB62A14B0F /* MJExtension-prefix.pch */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/MJExtension";
 			sourceTree = "<group>";
 		};
 		C945CC5A78E6E0974FAE1EAADF48537D /* Support Files */ = {
@@ -236,14 +347,6 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/WLRRoute";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		D964FC43643FC49CEA55AA0ED0C253A1 /* Pod */ = {
@@ -259,51 +362,66 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		67EAC0CC2814FB04A5F732772D38FF72 /* Headers */ = {
+		4412E7FD327EF531EB3F6534AF4917E4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63B4FEE55B76B72DEDD1116772A4C839 /* NSError+WLRError.h in Headers */,
-				499CB9F506B001137A5674E6E0C82CD0 /* NSString+WLRQuery.h in Headers */,
-				DA48FB80E7807878FE7737F3677D0BE1 /* UIViewController+WLRRoute.h in Headers */,
-				A17A9511C4E41BC514B2D3A215902AD3 /* WLRMatchResult.h in Headers */,
-				31C240E9C531FC1F4EAE1BE91A450311 /* WLRRegularExpression.h in Headers */,
-				3EA433F04142384925F26FE7FC29B19F /* WLRRoute.h in Headers */,
-				AE78A2BE1280F8E6A73C4E05BC4C373D /* WLRRouteHandler.h in Headers */,
-				78BD936866C31DF9960F74D55111A6C6 /* WLRRouteMatcher.h in Headers */,
-				F8D2B14D570F25D5443E2AADB80995B9 /* WLRRouteMiddlewareProtocol.h in Headers */,
-				81893961B9D133A6CCC3737DC0806A0D /* WLRRouter.h in Headers */,
-				DDE4DB2761A428C4D2420A66BAC592B0 /* WLRRouteRequest.h in Headers */,
+				7536EF2F726F99EDB2251CF72450B71A /* MJExtension.h in Headers */,
+				19ACA68944CB470AFB183D4A47DDE36D /* MJExtensionConst.h in Headers */,
+				0CE641B685366A282A6ED15661BA1C8A /* MJFoundation.h in Headers */,
+				375247849CB02E73C168547F9340161F /* MJProperty.h in Headers */,
+				C70510E68308A5878BDD42DEE58482A4 /* MJPropertyKey.h in Headers */,
+				5C889A89DBCEFC9B05910FB52185B88F /* MJPropertyType.h in Headers */,
+				C5189E3E0A3F54D23AADDA3C041AC11D /* NSObject+MJClass.h in Headers */,
+				4713E827D3976D9AC3F5CCCC02B03F33 /* NSObject+MJCoding.h in Headers */,
+				55311DEC48F63FEACFF81321BE403E36 /* NSObject+MJKeyValue.h in Headers */,
+				2228B859487021B2A8D28DA4CF9A099F /* NSObject+MJProperty.h in Headers */,
+				BA111DE62C729B3D92AD151154612ABE /* NSString+MJExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE12687702CC732ACC2AEB17011F15C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				329A641A71B1D310A9C510928D203179 /* NSError+WLRError.h in Headers */,
+				20B729F92D43FEB1D1AF995B8D415869 /* NSString+WLRQuery.h in Headers */,
+				2FC67007F9F058BB0C1665CDE4E3AA00 /* UIViewController+WLRRoute.h in Headers */,
+				D1AC81E3FF18E35DEA159DEE4BD06EDF /* WLRMatchResult.h in Headers */,
+				01BA59F0FEA14D0025ED5B2AB5A3AA97 /* WLRRegularExpression.h in Headers */,
+				657B8FA6A7FBDB354F29A85F7EAB0C2C /* WLRRoute.h in Headers */,
+				0C28022247BC4DE17E244B6B27D34616 /* WLRRouteHandler.h in Headers */,
+				2A8DB4ED258EEEBDF361CB51977E149B /* WLRRouteMatcher.h in Headers */,
+				4F7B64646448008A8A757D5DA7F27932 /* WLRRouteMiddlewareProtocol.h in Headers */,
+				B24501935DD44770EA9A7F339A1DCCFC /* WLRRouter.h in Headers */,
+				432BD5A9388381BD2C39F838C14EEC2A /* WLRRouteRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FD2BE9D6DF7163B9789AF2B78143598 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E862DEE391DBCE29A29F80EB5E44966E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8D613574A90612EDB6F66CEC93156363 /* Pods-WLRRoute_Example */ = {
+		7EF672B66467B3C0AFA5CC918E2A2B88 /* WLRRoute */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4FE4AB2D9219AF25D25AD6AC66404B9 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Example" */;
+			buildConfigurationList = D4FEE27FBB1873BDF7C477427F8CE1DB /* Build configuration list for PBXNativeTarget "WLRRoute" */;
 			buildPhases = (
-				FF43F545FA83A35111104A37CBC5E1F2 /* Sources */,
-				FB03C66B22ACA0D6AEF8B77A1520EF00 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1933C732B35B863196CD13AC96783ACF /* PBXTargetDependency */,
-			);
-			name = "Pods-WLRRoute_Example";
-			productName = "Pods-WLRRoute_Example";
-			productReference = AB57729FD6521F2501608771F27F8350 /* libPods-WLRRoute_Example.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		EC2C61D5C8EEA6BF66E4A28BE73B205D /* WLRRoute */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ED42201726D5A23E45F2144C243F00E0 /* Build configuration list for PBXNativeTarget "WLRRoute" */;
-			buildPhases = (
-				E67C3108812A4DD1D7BC68D016286594 /* Sources */,
-				06D00D05F1017845AECF96BE867563C0 /* Frameworks */,
-				67EAC0CC2814FB04A5F732772D38FF72 /* Headers */,
+				6AE12687702CC732ACC2AEB17011F15C /* Headers */,
+				2450FDD61850D136246656D64ED5830A /* Sources */,
+				DB79BAA51253F1D3C305A6AA5E815F97 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,23 +429,61 @@
 			);
 			name = WLRRoute;
 			productName = WLRRoute;
-			productReference = C43EBD727AADF441B07C0B8F896C866E /* libWLRRoute.a */;
+			productReference = BCA2C909B6605FB4F9D31BE817561EAF /* libWLRRoute.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		FF89019B7AC7C84149C65EC1FB178098 /* Pods-WLRRoute_Tests */ = {
+		AF8C8DCD60593A41570C3853E83FC9B3 /* Pods-WLRRoute_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE12A91E8B5D5797CE2BE33612A996D4 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Tests" */;
+			buildConfigurationList = D77F8EAAAFC22810FE730E5D90E5630F /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Tests" */;
 			buildPhases = (
-				FAED59C67597A0C7B3A120B83E19438F /* Sources */,
-				D19D71351293AE6066F31A53A4E0D8B8 /* Frameworks */,
+				E862DEE391DBCE29A29F80EB5E44966E /* Headers */,
+				B8AB01CE80CD6B46C661970C53F32B2E /* Sources */,
+				1F1E85D486F3C90D3BF558C4AF243246 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F84C55A30F31AF046764D02C0BFA698 /* PBXTargetDependency */,
+			);
+			name = "Pods-WLRRoute_Tests";
+			productName = "Pods-WLRRoute_Tests";
+			productReference = 74736BA5048AABEBEB055EF9FE2F06BB /* libPods-WLRRoute_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B640554BE1960135664FA3E2B45A13BF /* Pods-WLRRoute_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540CCD79BF61A937A0A3C49AB3496362 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Example" */;
+			buildPhases = (
+				8FD2BE9D6DF7163B9789AF2B78143598 /* Headers */,
+				1EE8E319E50B65F09D375DF28956316D /* Sources */,
+				3E409949415212CB8CE4496EE6A814A3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBD1ABC2B7B05A7D5916617B5469B5F6 /* PBXTargetDependency */,
+				D4D9D6F0584EF401BAB9302BF262A926 /* PBXTargetDependency */,
+			);
+			name = "Pods-WLRRoute_Example";
+			productName = "Pods-WLRRoute_Example";
+			productReference = 0C803E6E73D05356B318211EC5A65FA5 /* libPods-WLRRoute_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BDE2C47E2D60AE7740EA60996745639A /* MJExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2B289143F1F319AA59ED7F0624DA2B /* Build configuration list for PBXNativeTarget "MJExtension" */;
+			buildPhases = (
+				4412E7FD327EF531EB3F6534AF4917E4 /* Headers */,
+				519FC30CDBC22F9676B2659C7E64FBE0 /* Sources */,
+				39E2B3197962BBE6E80DA7860BC2E209 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-WLRRoute_Tests";
-			productName = "Pods-WLRRoute_Tests";
-			productReference = 6CC2726298E3180476178CCF17F9CE52 /* libPods-WLRRoute_Tests.a */;
+			name = MJExtension;
+			productName = MJExtension;
+			productReference = 4C7E07E55D9D9FB04C0FCA90873A82E5 /* libMJExtension.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -347,64 +503,142 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = B87940CAECC7991B5564E3594617B573 /* Products */;
+			productRefGroup = 904F12B6189887129DD440E59A54D743 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D613574A90612EDB6F66CEC93156363 /* Pods-WLRRoute_Example */,
-				FF89019B7AC7C84149C65EC1FB178098 /* Pods-WLRRoute_Tests */,
-				EC2C61D5C8EEA6BF66E4A28BE73B205D /* WLRRoute */,
+				BDE2C47E2D60AE7740EA60996745639A /* MJExtension */,
+				B640554BE1960135664FA3E2B45A13BF /* Pods-WLRRoute_Example */,
+				AF8C8DCD60593A41570C3853E83FC9B3 /* Pods-WLRRoute_Tests */,
+				7EF672B66467B3C0AFA5CC918E2A2B88 /* WLRRoute */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E67C3108812A4DD1D7BC68D016286594 /* Sources */ = {
+		1EE8E319E50B65F09D375DF28956316D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8118B175281D8DCA17E59CABE9D970A6 /* NSError+WLRError.m in Sources */,
-				9592EA7D47050DD6CCDA8E306773C6D9 /* NSString+WLRQuery.m in Sources */,
-				22A5EA6C1B22B9259F5645CFD2A57981 /* UIViewController+WLRRoute.m in Sources */,
-				E76FDC00EC4642D1BB1FD8C0246D06D6 /* WLRMatchResult.m in Sources */,
-				75BA816613B8DF5766BEF9525D477E5A /* WLRRegularExpression.m in Sources */,
-				03F35CFC5EF6A1E417C220B22F122A61 /* WLRRoute-dummy.m in Sources */,
-				A394D611AD11875D326D60682A195D60 /* WLRRouteHandler.m in Sources */,
-				9FE0755BDB4F5D0FEC92D63AB5726EBE /* WLRRouteMatcher.m in Sources */,
-				4FE3B7929FB745DCD78859B1BD28600D /* WLRRouter.m in Sources */,
-				68720D3ED3038017BC8B4803F8B3E391 /* WLRRouteRequest.m in Sources */,
+				9911F4C7259C55D4B9720C31BF1F66FB /* Pods-WLRRoute_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAED59C67597A0C7B3A120B83E19438F /* Sources */ = {
+		2450FDD61850D136246656D64ED5830A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B20A9903CD9DE4210E0CB357E01076A /* Pods-WLRRoute_Tests-dummy.m in Sources */,
+				E958A7EAB0BFBE6F403091626AC34718 /* NSError+WLRError.m in Sources */,
+				6DECBB48498977E9F29BA2EFF65318E2 /* NSString+WLRQuery.m in Sources */,
+				419055EB64814AFBD442AEEDA2F750D7 /* UIViewController+WLRRoute.m in Sources */,
+				68E35F4C37E01704933C4CB94FFFC564 /* WLRMatchResult.m in Sources */,
+				7EAAA7502381E4006BB732C6E8296EF7 /* WLRRegularExpression.m in Sources */,
+				5B0A5622F94887D00929F01D18B2E73C /* WLRRoute-dummy.m in Sources */,
+				2A23BC88F400142A1A112C0AD4D76A42 /* WLRRouteHandler.m in Sources */,
+				38C9F17E834F5663C9C1FF3E557E7596 /* WLRRouteMatcher.m in Sources */,
+				4E976C2ECC15109C33C62B5E1CBBFFB3 /* WLRRouter.m in Sources */,
+				D79DE443F96DE6CEA9F52F25C6FF1B7C /* WLRRouteRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF43F545FA83A35111104A37CBC5E1F2 /* Sources */ = {
+		519FC30CDBC22F9676B2659C7E64FBE0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E4CC7AFFAECDC8853AF4D2C057A2DC /* Pods-WLRRoute_Example-dummy.m in Sources */,
+				EDE999535FE80CBA5C42423F9C2BEBD3 /* MJExtension-dummy.m in Sources */,
+				E1045472BEE4D8DDF64EA62BF5DFCD7A /* MJExtensionConst.m in Sources */,
+				09A6ED24FAE778271EF9E9401DFCCD9F /* MJFoundation.m in Sources */,
+				F5B2B2DE914A9FE380F189FD3AD64DF3 /* MJProperty.m in Sources */,
+				055F5AFB247AD0CC9A81E3E1764AE2C4 /* MJPropertyKey.m in Sources */,
+				7384FC985DE4051B06428ED838F30564 /* MJPropertyType.m in Sources */,
+				FB5D3F0621978B45C7695CDCAD4C9FF1 /* NSObject+MJClass.m in Sources */,
+				F224868ED206300DF15F03F26C008CD5 /* NSObject+MJCoding.m in Sources */,
+				CAC063AD1FBE07ADDE816C8DB6637ABC /* NSObject+MJKeyValue.m in Sources */,
+				F2D29E13A5BC9925E0D6FDAC40794D19 /* NSObject+MJProperty.m in Sources */,
+				A8F0A58038991D74C79E2F01C0D4AAFD /* NSString+MJExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8AB01CE80CD6B46C661970C53F32B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				716FD56E3F358D2A9F92C59FB4C5F79F /* Pods-WLRRoute_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1933C732B35B863196CD13AC96783ACF /* PBXTargetDependency */ = {
+		0F84C55A30F31AF046764D02C0BFA698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WLRRoute_Example";
+			target = B640554BE1960135664FA3E2B45A13BF /* Pods-WLRRoute_Example */;
+			targetProxy = 725672DA78873F8B79D11E2086152E42 /* PBXContainerItemProxy */;
+		};
+		BBD1ABC2B7B05A7D5916617B5469B5F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MJExtension;
+			target = BDE2C47E2D60AE7740EA60996745639A /* MJExtension */;
+			targetProxy = F7348A164BB01393CE3EE5184EA1217F /* PBXContainerItemProxy */;
+		};
+		D4D9D6F0584EF401BAB9302BF262A926 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WLRRoute;
-			target = EC2C61D5C8EEA6BF66E4A28BE73B205D /* WLRRoute */;
-			targetProxy = 2ECD47A11343D087B4DEAB818081926C /* PBXContainerItemProxy */;
+			target = 7EF672B66467B3C0AFA5CC918E2A2B88 /* WLRRoute */;
+			targetProxy = 14CF6ECF4FB1D06886B074F6AFE4B161 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F1AF314AAE69DEE4284B7D24F00661E /* Release */ = {
+		15C2A4A75A9443251C101CF64DCD5464 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D20C551C40885F13FED826F644E701 /* MJExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJExtension;
+				PRODUCT_NAME = MJExtension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32DA1585B91A121EB4A3A97DDE04B0C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D20C551C40885F13FED826F644E701 /* MJExtension.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MJExtension;
+				PRODUCT_NAME = MJExtension;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EE6C0506316755875CD481FAC933799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -436,6 +670,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -455,76 +690,14 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		3DD20FBD8CE13E7D793B46AAA0EED222 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DA258EA9A1AD4BE383B299EC71E24F3 /* Pods-WLRRoute_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		4AF0F4CC845777DD967E0271722F72F7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 916AA93E3ABEAD2988ACCEE64DE16381 /* Pods-WLRRoute_Tests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4EBCA3E3FB7B3A9FED091DBCF25D22E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A33A5FA263A54B59BE86FE093BB367F6 /* Pods-WLRRoute_Example.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		67AA16F27CF77B961895098F4FCF2AD7 /* Debug */ = {
+		62792666593EC3A37B58190B1A74448E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23389EC0856E9437DA62989148CF8517 /* WLRRoute.xcconfig */;
 			buildSettings = {
@@ -537,6 +710,8 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WLRRoute;
+				PRODUCT_NAME = WLRRoute;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -545,7 +720,28 @@
 			};
 			name = Debug;
 		};
-		B30DD4CACE0190C651BCBBF67926B630 /* Debug */ = {
+		652A2E00102D63150D885CE778F2D85C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA258EA9A1AD4BE383B299EC71E24F3 /* Pods-WLRRoute_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80CD87F6CD790A781413136112217B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -577,6 +773,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -598,17 +795,39 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BC4FB09E8FB081FBBB1F4C3E33126EC3 /* Release */ = {
+		88B0FB47B4307BE02A5E6658BD4DB34A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A33A5FA263A54B59BE86FE093BB367F6 /* Pods-WLRRoute_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D42B88E159FAB0D6892D79A885618C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 23389EC0856E9437DA62989148CF8517 /* WLRRoute.xcconfig */;
 			buildSettings = {
@@ -621,6 +840,8 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = WLRRoute;
+				PRODUCT_NAME = WLRRoute;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -630,10 +851,33 @@
 			};
 			name = Release;
 		};
-		FA7F4CC2157273EBFD066E78F92FA4D2 /* Debug */ = {
+		B8D58DD856657D6578A67E5606B6DA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916AA93E3ABEAD2988ACCEE64DE16381 /* Pods-WLRRoute_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAFBE8D94103B6F753EB81E944230126 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4BE9D05A02D4FBC87A2B1C048BACBC9F /* Pods-WLRRoute_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -656,35 +900,44 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B30DD4CACE0190C651BCBBF67926B630 /* Debug */,
-				0F1AF314AAE69DEE4284B7D24F00661E /* Release */,
+				80CD87F6CD790A781413136112217B22 /* Debug */,
+				4EE6C0506316755875CD481FAC933799 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4FE4AB2D9219AF25D25AD6AC66404B9 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Example" */ = {
+		540CCD79BF61A937A0A3C49AB3496362 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3DD20FBD8CE13E7D793B46AAA0EED222 /* Debug */,
-				4EBCA3E3FB7B3A9FED091DBCF25D22E6 /* Release */,
+				652A2E00102D63150D885CE778F2D85C /* Debug */,
+				88B0FB47B4307BE02A5E6658BD4DB34A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE12A91E8B5D5797CE2BE33612A996D4 /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Tests" */ = {
+		D4FEE27FBB1873BDF7C477427F8CE1DB /* Build configuration list for PBXNativeTarget "WLRRoute" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA7F4CC2157273EBFD066E78F92FA4D2 /* Debug */,
-				4AF0F4CC845777DD967E0271722F72F7 /* Release */,
+				62792666593EC3A37B58190B1A74448E /* Debug */,
+				9D42B88E159FAB0D6892D79A885618C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED42201726D5A23E45F2144C243F00E0 /* Build configuration list for PBXNativeTarget "WLRRoute" */ = {
+		D77F8EAAAFC22810FE730E5D90E5630F /* Build configuration list for PBXNativeTarget "Pods-WLRRoute_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				67AA16F27CF77B961895098F4FCF2AD7 /* Debug */,
-				BC4FB09E8FB081FBBB1F4C3E33126EC3 /* Release */,
+				CAFBE8D94103B6F753EB81E944230126 /* Debug */,
+				B8D58DD856657D6578A67E5606B6DA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2B289143F1F319AA59ED7F0624DA2B /* Build configuration list for PBXNativeTarget "MJExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C2A4A75A9443251C101CF64DCD5464 /* Debug */,
+				32DA1585B91A121EB4A3A97DDE04B0C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

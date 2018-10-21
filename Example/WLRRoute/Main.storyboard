@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fuB-ZU-TRm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fuB-ZU-TRm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,13 +51,30 @@
                                     <action selector="userClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="Evn-Qt-lGb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hw-8s-BnS">
+                                <rect key="frame" x="110" y="263" width="155" height="47"/>
+                                <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="7JQ-FH-dRy"/>
+                                    <constraint firstAttribute="height" constant="47" id="Xku-uC-YTe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                <state key="normal" title="ConfigSigin">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ConfigSiginClick:" destination="whP-gf-Uak" eventType="touchUpInside" id="Ful-4W-7G2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Rf9-HG-Ogc" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="45" id="2J7-bI-VHb"/>
                             <constraint firstItem="Rf9-HG-Ogc" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="2lt-KN-fiz"/>
                             <constraint firstItem="oGS-ad-EDJ" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="LJO-gd-4EZ"/>
+                            <constraint firstItem="9hw-8s-BnS" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="MUQ-xr-xv1"/>
                             <constraint firstItem="oGS-ad-EDJ" firstAttribute="top" secondItem="Rf9-HG-Ogc" secondAttribute="bottom" constant="30" id="oyV-Rm-ohR"/>
+                            <constraint firstItem="Rf9-HG-Ogc" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="45" id="qux-BN-RV1"/>
+                            <constraint firstItem="9hw-8s-BnS" firstAttribute="top" secondItem="oGS-ad-EDJ" secondAttribute="bottom" constant="30" id="se8-Hr-VYB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Example" id="xcg-cg-t1Q"/>
@@ -89,64 +105,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ms5-gd-5FZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
-        </scene>
-        <!--Example-->
-        <scene sceneID="IGe-mc-q40">
-            <objects>
-                <viewController id="0E2-Qa-acK" customClass="WLRViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="09W-mo-TS2"/>
-                        <viewControllerLayoutGuide type="bottom" id="lic-yC-xlh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="6py-am-cIX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaC-LB-0sL">
-                                <rect key="frame" x="110" y="45" width="155" height="47"/>
-                                <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="nET-Xs-TUL"/>
-                                    <constraint firstAttribute="height" constant="47" id="vMe-qG-6tk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                <state key="normal" title="Sigin">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="SiginClick:" destination="0E2-Qa-acK" eventType="touchUpInside" id="1N7-Yi-GxB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ena-0Z-P9f">
-                                <rect key="frame" x="110" y="122" width="155" height="47"/>
-                                <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="Lmm-lZ-WNw"/>
-                                    <constraint firstAttribute="width" constant="155" id="wgV-YR-3ps"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
-                                <state key="normal" title="UserPofile">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="userClick:" destination="0E2-Qa-acK" eventType="touchUpInside" id="7I5-ja-ePS"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="yaC-LB-0sL" firstAttribute="top" secondItem="09W-mo-TS2" secondAttribute="bottom" constant="45" id="DxX-Pm-pjr"/>
-                            <constraint firstItem="Ena-0Z-P9f" firstAttribute="centerX" secondItem="6py-am-cIX" secondAttribute="centerX" id="M2m-G3-sCl"/>
-                            <constraint firstItem="Ena-0Z-P9f" firstAttribute="top" secondItem="yaC-LB-0sL" secondAttribute="bottom" constant="30" id="h2G-IS-Vbn"/>
-                            <constraint firstItem="yaC-LB-0sL" firstAttribute="centerX" secondItem="6py-am-cIX" secondAttribute="centerX" id="sXn-6A-2fJ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Example" id="Apw-ar-14N"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tN6-Ee-rm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1258.4000000000001" y="432.23388305847078"/>
         </scene>
         <!--Sigin-->
         <scene sceneID="230-ZN-zNL">
@@ -234,7 +192,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RO8-R3-moQ">
-                                <rect key="frame" x="166" y="291" width="42" height="21"/>
+                                <rect key="frame" x="166.5" y="291" width="42" height="21"/>
                                 <color key="backgroundColor" red="1" green="0.92549019610000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>

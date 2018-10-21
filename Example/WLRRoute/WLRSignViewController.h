@@ -11,6 +11,14 @@
 //@protocol HBSignModuleProtocol<HBModuleProtocol>
 //+(UIViewController *)signViewControllerWithPhone:(NSString *)phone;
 //@end
+@interface Person:NSObject
+@property(nonatomic,copy)NSString * name;
+@property(nonatomic,strong)NSNumber * age;
+@end
 @interface WLRSignViewController : UIViewController
 @property(nonatomic,copy)NSString * title_name;
+@property(nonatomic,strong)Person * person;
+@property(nonatomic)NSInteger state;
++(WLRSignViewController *)vcwith:(Person*)person state:(NSInteger)state;
+
 @end

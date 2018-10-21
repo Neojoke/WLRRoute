@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EC2C61D5C8EEA6BF66E4A28BE73B205D"
+               BlueprintIdentifier = "7EF672B66467B3C0AFA5CC918E2A2B88"
                BlueprintName = "WLRRoute"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libWLRRoute.a">

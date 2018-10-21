@@ -34,6 +34,11 @@
 		B583ABB720A9702300C88310 /* HBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B583ABB620A9702300C88310 /* HBLoginViewController.m */; };
 		B583ABB920A971C800C88310 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = B583ABB820A971C800C88310 /* config.json */; };
 		B583ABBC20A9772600C88310 /* HBOldRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = B583ABBB20A9772600C88310 /* HBOldRoute.m */; };
+		B58EAB1A217C1F84007EBB60 /* HBXCallBackHander.m in Sources */ = {isa = PBXBuildFile; fileRef = B58EAB17217C1F84007EBB60 /* HBXCallBackHander.m */; };
+		B58EAB1B217C1F84007EBB60 /* route_config.json in Resources */ = {isa = PBXBuildFile; fileRef = B58EAB18217C1F84007EBB60 /* route_config.json */; };
+		B58EAB1E217C218E007EBB60 /* HBConfigRoutingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B58EAB1D217C218E007EBB60 /* HBConfigRoutingHandler.m */; };
+		B58EAB21217C45CE007EBB60 /* RuntimeInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = B58EAB20217C45CE007EBB60 /* RuntimeInvoker.m */; };
+		B58EAB24217C5CDB007EBB60 /* ConfigRouting.json in Resources */ = {isa = PBXBuildFile; fileRef = B58EAB23217C5CDB007EBB60 /* ConfigRouting.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,9 +97,17 @@
 		B583ABB320A9701400C88310 /* HBConditionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBConditionViewController.m; sourceTree = "<group>"; };
 		B583ABB520A9702300C88310 /* HBLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBLoginViewController.h; sourceTree = "<group>"; };
 		B583ABB620A9702300C88310 /* HBLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBLoginViewController.m; sourceTree = "<group>"; };
-		B583ABB820A971C800C88310 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config.json; path = WLRRoute/config.json; sourceTree = "<group>"; };
+		B583ABB820A971C800C88310 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		B583ABBA20A9772600C88310 /* HBOldRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBOldRoute.h; sourceTree = "<group>"; };
 		B583ABBB20A9772600C88310 /* HBOldRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBOldRoute.m; sourceTree = "<group>"; };
+		B58EAB17217C1F84007EBB60 /* HBXCallBackHander.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXCallBackHander.m; sourceTree = "<group>"; };
+		B58EAB18217C1F84007EBB60 /* route_config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = route_config.json; sourceTree = "<group>"; };
+		B58EAB19217C1F84007EBB60 /* HBXCallBackHander.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXCallBackHander.h; sourceTree = "<group>"; };
+		B58EAB1C217C218E007EBB60 /* HBConfigRoutingHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBConfigRoutingHandler.h; sourceTree = "<group>"; };
+		B58EAB1D217C218E007EBB60 /* HBConfigRoutingHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HBConfigRoutingHandler.m; sourceTree = "<group>"; };
+		B58EAB1F217C45CE007EBB60 /* RuntimeInvoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeInvoker.h; sourceTree = "<group>"; };
+		B58EAB20217C45CE007EBB60 /* RuntimeInvoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeInvoker.m; sourceTree = "<group>"; };
+		B58EAB23217C5CDB007EBB60 /* ConfigRouting.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ConfigRouting.json; sourceTree = "<group>"; };
 		C510FB8F4568A3C6FF99CC18 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F95F48B9A76F6072E199C0FC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,7 +141,6 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				B583ABB820A971C800C88310 /* config.json */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for WLRRoute */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -163,6 +175,11 @@
 		6003F593195388D20070C39A /* Example for WLRRoute */ = {
 			isa = PBXGroup;
 			children = (
+				B58EAB22217C5CA5007EBB60 /* RouterConfig */,
+				B58EAB19217C1F84007EBB60 /* HBXCallBackHander.h */,
+				B58EAB17217C1F84007EBB60 /* HBXCallBackHander.m */,
+				B58EAB18217C1F84007EBB60 /* route_config.json */,
+				B583ABB820A971C800C88310 /* config.json */,
 				B583ABAB20A96FA900C88310 /* Modules */,
 				B583ABAA20A96F6B00C88310 /* ConditionModule */,
 				B583ABA820A96EA100C88310 /* UserModule */,
@@ -270,6 +287,18 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		B58EAB22217C5CA5007EBB60 /* RouterConfig */ = {
+			isa = PBXGroup;
+			children = (
+				B58EAB1F217C45CE007EBB60 /* RuntimeInvoker.h */,
+				B58EAB20217C45CE007EBB60 /* RuntimeInvoker.m */,
+				B58EAB1C217C218E007EBB60 /* HBConfigRoutingHandler.h */,
+				B58EAB1D217C218E007EBB60 /* HBConfigRoutingHandler.m */,
+				B58EAB23217C5CDB007EBB60 /* ConfigRouting.json */,
+			);
+			path = RouterConfig;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,8 +310,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				8612F947377B3134604C6753 /* [CP] Embed Pods Frameworks */,
-				A8BC8FD0F0FEE36DA1874CE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -301,8 +328,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				E4AD52EB0164C6EA2BC6D1AB /* [CP] Embed Pods Frameworks */,
-				3FE611E10424252C64F7E3DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -353,9 +378,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58EAB1B217C1F84007EBB60 /* route_config.json in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				B583ABB920A971C800C88310 /* config.json in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				B58EAB24217C5CDB007EBB60 /* ConfigRouting.json in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,36 +398,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3FE611E10424252C64F7E3DD /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLRRoute_Tests/Pods-WLRRoute_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8612F947377B3134604C6753 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLRRoute_Example/Pods-WLRRoute_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A2B1765A7794B254AC866883 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,36 +434,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A8BC8FD0F0FEE36DA1874CE3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLRRoute_Example/Pods-WLRRoute_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4AD52EB0164C6EA2BC6D1AB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WLRRoute_Tests/Pods-WLRRoute_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -477,14 +444,17 @@
 				6003F59E195388D20070C39A /* WLRAppDelegate.m in Sources */,
 				B583ABBC20A9772600C88310 /* HBOldRoute.m in Sources */,
 				B583ABB120A96FD300C88310 /* ConditionModule.m in Sources */,
+				B58EAB1A217C1F84007EBB60 /* HBXCallBackHander.m in Sources */,
 				6003F5A7195388D20070C39A /* WLRViewController.m in Sources */,
 				76B4BC851E06A18E00D1E590 /* WLRUserHandler.m in Sources */,
 				B583ABB720A9702300C88310 /* HBLoginViewController.m in Sources */,
+				B58EAB1E217C218E007EBB60 /* HBConfigRoutingHandler.m in Sources */,
 				76B4BC8B1E06A1AA00D1E590 /* WLRUserViewController.m in Sources */,
 				B539A64D207DA1B9006B789B /* HBXCALLBACKHandler.m in Sources */,
 				B583ABB420A9701400C88310 /* HBConditionViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				76B4BC821E06A18400D1E590 /* WLRSignHandler.m in Sources */,
+				B58EAB21217C45CE007EBB60 /* RuntimeInvoker.m in Sources */,
 				B583ABAE20A96FC600C88310 /* UserModule.m in Sources */,
 				76B4BC881E06A1A100D1E590 /* WLRSignViewController.m in Sources */,
 			);

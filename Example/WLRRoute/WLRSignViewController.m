@@ -8,6 +8,8 @@
 
 #import "WLRSignViewController.h"
 #import <WLRRoute/WLRRoute.h>
+@implementation Person
+@end
 @interface WLRSignViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *Phone;
 @property (weak, nonatomic) IBOutlet UITextField *password;
@@ -15,6 +17,13 @@
 @end
 
 @implementation WLRSignViewController
++(WLRSignViewController *)vcwith:(Person *)person state:(NSInteger)state{
+    WLRSignViewController * vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"WLRSignViewController"];
+    vc.title_name = person.name;
+    vc.person = person;
+    vc.state = state;
+    return vc;
+}
 #pragma mark -Module Protocol impl
 +(BOOL)handleRequest:(WLRRouteRequest *)request actionName:(NSString *)actionName completionHandler:(WLRRouteCompletionHandler)completionHandler{
     UIViewController * controller = [self targetViewControllerWithRequest:request actionName:actionName completionHandler:completionHandler];

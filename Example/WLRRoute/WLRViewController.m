@@ -9,6 +9,7 @@
 #import "WLRViewController.h"
 #import <WLRRoute/WLRRoute.h>
 #import "WLRAppDelegate.h"
+
 @interface WLRViewController ()<WLRRouteMiddleware>
 @property(nonatomic,weak)WLRRouter * router;
 @end
@@ -45,7 +46,21 @@
         NSLog(@"SiginHandleCompletion");
     }];
 }
+- (IBAction)ConfigSiginClick:(UIButton *)sender{
+//    NSURL * routeURL =[NSURL URLWithString:@"WLRDemo://sign/default"];
+    NSURL * routeURL =[NSURL URLWithString:@"WLRDemo://sign/storyBoard"];
+//    NSURL * routeURL =[NSURL URLWithString:@"WLRDemo://sign/staticMethod"];
 
+    NSDictionary * dict = @{@"title_name":@"xiaoming",@"person":@{
+                                    @"name":@"xiaohong",
+                                    @"age":@10
+                                    },@"state":@2};
+    [self.router handleURL:routeURL primitiveParameters:dict targetCallBack:^(NSError *error, id responseObject) {
+        
+    } withCompletionBlock:^(BOOL handled, NSError *error) {
+        
+    }];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

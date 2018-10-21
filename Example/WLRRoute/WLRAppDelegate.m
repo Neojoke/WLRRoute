@@ -12,8 +12,12 @@
 #import "WLRUserHandler.h"
 #import "HBXCALLBACKHandler.h"
 #import "WLRSignViewController.h"
+#import "HBConfigRoutingHandler.h"
+#import <MJExtension/MJExtension.h>
 @interface WLRAppDelegate()
 @property(nonatomic,strong)HBXCALLBACKHandler * handler;
+@property(nonatomic,strong)HBConfigRoutingHandler * routingHandler;
+
 @end
 @implementation WLRAppDelegate
 
@@ -21,6 +25,7 @@
 {
     // Override point for customization after application launch.
     self.router = [[WLRRouter alloc]init];
+    [self testConfig];
     [self.router registerHandler:[[WLRSignHandler alloc]init] forRoute:@"/signin/:phone([0-9]+)"];
     [self.router registerHandler:[[WLRUserHandler alloc]init] forRoute:@"/user"];
 //    [self.router registerBlock:^WLRRouteRequest *(WLRRouteRequest *request) {
@@ -43,9 +48,24 @@
         return YES;
     }];
     self.handler = x_call_back_handler;
+    
+    
     return YES;
 }
-
+- (void)testConfig{
+    NSString * routing_config_data_path = [[NSBundle mainBundle]pathForResource:@"ConfigRouting" ofType:@"json"];
+    NSData * routing_config_data = [[NSData alloc]initWithContentsOfFile:routing_config_data_path];
+    NSError * error = nil;
+    NSDictionary * routing_config_dict = [NSJSONSerialization JSONObjectWithData:routing_config_data options:NSJSONReadingMutableContainers error:&error];
+    NSMutableDictionary <NSString *,HBRoutingConfigInfo *>* configDict = [[NSMutableDictionary alloc]init];
+    for (NSString * route_exp in routing_config_dict.allKeys) {
+        NSDictionary * route_config_info = [routing_config_dict objectForKey:route_exp];
+        HBRoutingConfigInfo * info = [HBRoutingConfigInfo mj_objectWithKeyValues:route_config_info];
+        [configDict setObject:info forKey:route_exp];
+    }
+    HBConfigRoutingHandler * handler = [HBConfigRoutingHandler handlerWithRouter:self.router configInfoDict:configDict];
+    self.routingHandler = handler;
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

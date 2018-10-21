@@ -2,7 +2,7 @@
 
 target 'WLRRoute_Example' do
   pod 'WLRRoute', :path => '../'
-
+  pod 'MJExtension'
   target 'WLRRoute_Tests' do
     inherit! :search_paths
 
